@@ -372,10 +372,27 @@ function startGame () {
   playButton.classList.add("hide");
   contactButton.classList.add("hide");
   greeting.classList.add("hide");
+  quizContainer.classList.remove("hide");
 
   currentQuestionIndex = 0;
   score = 0;
 
   shuffledQuestions = questions.sort(() => Math.random() - .5);
+
+  nextQuestion();
+}
+
+function nextQuestion () {
+  showQuestion(shuffledQuestions[currentQuestionIndex]);
+}
+
+function showQuestion(question) {
+  questionContainer.innerText = question.question;
+  question.answers.forEach(answer => {
+    const button = document.createElement("button");
+    button.innerText = answer.text;
+    button.classList.add("btn");
+    
+  })
 
 }
