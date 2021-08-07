@@ -84,3 +84,9 @@ h3 {
         font-size: 150%;
     }
 }
+
+/* javascript */
+
+.hide {
+    display: none;
+}
