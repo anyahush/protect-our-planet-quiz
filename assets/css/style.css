@@ -11,9 +11,32 @@
 }
 
 h1 {
-    
+    font-family: 'Super Boom';
+    text-align: center;
+    padding-top: 25px;
+    font-size: 300%;
+    text-shadow: 2px 2px #fff;
 }
 
+h2 {
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 180%;
+}
+
+#main-container {
+    font-family: 'Source Code Pro';
+    font-weight: 600;
+    font-size: 120%;
+    width: 300px;
+    height: 550px;
+    text-align: center;
+    background-color: #b7e6d3;
+    opacity: 0.8;
+    border-radius: 20px;
+    margin: 40px auto;
+    padding: 25px;
+}
 /* media queries */
 
 @media only screen and (min-width: 769px) {
@@ -24,5 +47,13 @@ h1 {
         min-height: 100vh;
         background-size: cover;
         position: sticky;
+    }
+    h1 {
+        font-size: 500%;
+    }
+    #main-container {
+        width: 350px;
+        height: 650px;
+        font-size: 150%;
     }
 }
