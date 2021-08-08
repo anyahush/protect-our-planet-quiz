@@ -364,6 +364,10 @@ let currentQuestionIndex;
 let score;
 
 startButton.addEventListener("click", startGame);
+nextButton.addEventListener("click", () => {
+  currentQuestionIndex++;
+  nextQuestion();
+})
 
 function startGame () {
   console.log("Game started");
@@ -383,6 +387,7 @@ function startGame () {
 }
 
 function nextQuestion () {
+  resetQuestion();
   showQuestion(shuffledQuestions[currentQuestionIndex]);
 }
 
@@ -392,7 +397,22 @@ function showQuestion(question) {
     const button = document.createElement("button");
     button.innerText = answer.text;
     button.classList.add("btn");
-    
+    if(answer.correct) {
+      button.dataset.correct = answer.correct;
+    }
+    button.addEventListener("click", selectAnswer);
+    answerButtons.appendChild(button);
   })
+
+}
+
+function resetQuestion () {
+  nextButton.classList.add("hide");
+  while(answerButtons.firstChild) {
+    answerButtons.removeChild(answerButtons.firstChild);
+  }
+}
+
+function selectAnswer () {
 
 }
