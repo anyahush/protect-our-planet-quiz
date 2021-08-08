@@ -25,7 +25,7 @@ window.onclick = function (event) {
   }
 }
 
-// quiz
+// quiz amended from web dev simplified 
 
 // constants
 const startButton = document.getElementById("start-btn");
@@ -360,6 +360,345 @@ const questions = [{
     ]
   }
 ];
+
+const levelTwoQuestions = [{
+    question: 'An ______ is where all the animals on Earth affect each other',
+    answers: [{
+        text: 'Ecosystem',
+        correct: true
+      },
+      {
+        text: 'Ocean',
+        correct: false
+      },
+      {
+        text: 'Endangered species',
+        correct: false
+      },
+    ]
+  },
+  {
+    question: 'Which creature affects the ecosytem in an extreme way?',
+    answers: [{
+        text: 'Sharks',
+        correct: false
+      },
+      {
+        text: 'Plants',
+        correct: false
+      },
+      {
+        text: 'Humans',
+        correct: true
+      },
+    ]
+  },
+  {
+    question: 'Which of the following could you do to help the planet’s ecosystem?',
+    answers: [{
+        text: 'Recyle',
+        correct: true
+      },
+      {
+        text: 'Litter',
+        correct: false
+      },
+      {
+        text: 'Chop down trees',
+        correct: false
+      },
+    ]
+  },
+  {
+    question: 'What is the name for plastic objects that are only used once then thrown away?',
+    answers: [{
+        text: 'Biodegradable plastics',
+        correct: false
+      },
+      {
+        text: 'Single-use plastics',
+        correct: true
+      },
+      {
+        text: 'Recyclable plastics',
+        correct: false
+      }
+    ]
+  },
+  {
+    question: 'How can we live more sustainably?',
+    answers: [{
+        text: 'Using landfill sites',
+        correct: false
+      },
+      {
+        text: 'Reducing plastic packaging',
+        correct: true
+      },
+      {
+        text: 'Throwing plastics in the ocean',
+        correct: false
+      }
+    ]
+  },
+  {
+    question: ' Farming is a cause of climate change. Is it because ______?',
+    answers: [{
+        text: 'We grow too many plants',
+        correct: false
+      },
+      {
+        text: 'Animals like climate change',
+        correct: false
+      },
+      {
+        text: 'Cows let out methane, which is a greenhouse gas',
+        correct: true
+      },
+    ]
+  },
+  {
+    question: '_______ is a cause of climate change',
+    answers: [{
+        text: 'Deforestation',
+        correct: true
+      },
+      {
+        text: 'Cycling',
+        correct: false
+      },
+      {
+        text: 'Eating less meat',
+        correct: false
+      },
+    ]
+  },
+  {
+    question: 'What is a greenhouse gas?',
+    answers: [{
+        text: 'A gas that traps heat on Earth, preventing it from returning to space',
+        correct: true
+      },
+      {
+        text: 'A gas produced by the infamous green housefly',
+        correct: false
+      },
+      {
+        text: 'A gas that builds up in a greenhouse after plants have had too many burritos',
+        correct: false
+      },
+    ]
+  },
+  {
+    question: 'Saving water is important so we can make sure we have enough clean water, even in very wet countries! Which of these actions could you do to save water?',
+    answers: [{
+        text: 'Leaving the tap running when your brush your teeth',
+        correct: false
+      },
+      {
+        text: 'Having long showers',
+        correct: false
+      },
+      {
+        text: 'Turning off dripping taps',
+        correct: true
+      },
+    ]
+  },
+  {
+    question: 'Where does non-recycled rubbish go?',
+    answers: [{
+        text: 'Into space',
+        correct: false
+      },
+      {
+        text: 'Landfill or burned',
+        correct: true
+      },
+      {
+        text: 'A recycling plant',
+        correct: false
+      },
+    ]
+  },
+  {
+    question: 'How would you dispose of a book if you no longer needed it?',
+    answers: [{
+        text: 'Throw it in the bin',
+        correct: false
+      },
+      {
+        text: 'Burn it',
+        correct: false
+      },
+      {
+        text: 'Give it to someone else to read',
+        correct: true
+      },
+    ]
+  },
+  {
+    question: 'Which material needs separating into different colours before recycling?',
+    answers: [{
+        text: 'Paper',
+        correct: false
+      },
+      {
+        text: 'Glass',
+        correct: true
+      },
+      {
+        text: 'Steel',
+        correct: false
+      },
+    ]
+  },
+  {
+    question: 'Where does non-recycled rubbish go?',
+    answers: [{
+        text: 'Into space',
+        correct: false
+      },
+      {
+        text: 'Landfill or burned',
+        correct: true
+      },
+      {
+        text: 'A recycling plant',
+        correct: false
+      },
+    ]
+  },
+  {
+    question: 'What have most governments agreed to do to help stop global warming?',
+    answers: [{
+        text: 'Chop down rainforests',
+        correct: false
+      },
+      {
+        text: 'Stop using electricity',
+        correct: false
+      },
+      {
+        text: 'Reduce the amount of fossil fuels burned',
+        correct: true
+      },
+    ]
+  },
+  {
+    question: 'Which of these is an example of single- use plastic?',
+    answers: [{
+        text: 'A plastic straw',
+        correct: true
+      },
+      {
+        text: 'An egg carton',
+        correct: false
+      },
+      {
+        text: 'A soup tin',
+        correct: false
+      },
+    ]
+  },
+  {
+    question: 'Trees can help remove carbon dioxide (a greenhouse gas) from the atmosphere by:',
+    answers: [{
+        text: 'Intimidating it with their height',
+        correct: false
+      },
+      {
+        text: 'Breathing it in and breathing out oxygen',
+        correct: true
+      },
+      {
+        text: 'Falling down and blocking roads',
+        correct: false
+      },
+    ]
+  },
+  {
+    question: 'Why is it a good idea to turn off lights and other electronics when not using them?',
+    answers: [{
+        text: 'Because adults say so',
+        correct: false
+      },
+      {
+        text: 'Because the lights might get bored',
+        correct: false
+      },
+      {
+        text: 'Because the energy used to power lights is often powered by fossil fuels, and we need to save energy',
+        correct: true
+      },
+    ]
+  },
+  {
+    question: 'Why is solar energy a good way to generate electricity?',
+    answers: [{
+        text: "The Sun's energy is not going to run out for billions of years",
+        correct: true
+      },
+      {
+        text: "Solar panels look good on people's houses",
+        correct: false
+      },
+      {
+        text: 'It produces harmful gases',
+        correct: false
+      },
+    ]
+  },
+  {
+    question: 'When are solar panels NOT useful for generating power?',
+    answers: [{
+        text: 'During the night',
+        correct: true
+      },
+      {
+        text: 'When it is cold',
+        correct: false
+      },
+      {
+        text: 'When it is sunny',
+        correct: false
+      },
+    ]
+  },
+  {
+    question: 'Which of the following can help reduce the amount of greenhouse gases released into the atmosphere?',
+    answers: [{
+        text: 'Using a net to capture carbon dioxide',
+        correct: false
+      },
+      {
+        text: 'Flying to the beach with friends in seperate planes',
+        correct: false
+      },
+      {
+        text: 'Carpooling (sharing car journeys with other people)',
+        correct: true
+      },
+    ]
+  },
+  {
+    question: 'A warmer climate can affect our planet in lots of ways such as more rain, shrinking sea ice and ________',
+    answers: [{
+        text: 'Rising sea levels',
+        correct: false
+      },
+      {
+        text: 'Unpredictable and changeable weather',
+        correct: false
+      },
+      {
+        text: 'All of the above',
+        correct: true
+      },
+    ]
+  },
+  
+]
 // let
 let shuffledQuestions;
 let currentQuestion;
@@ -422,7 +761,7 @@ function selectAnswer(e) {
   const selectedButton = e.target;
   const correct = selectedButton.dataset.correct;
 
-  if (selectedButton.dataset = correct){
+  if (selectedButton.dataset = correct) {
     score++;
     console.log("1 point");
   }
@@ -442,7 +781,7 @@ function endLevel() {
   scoreText.classList.remove("hide");
   startButton.classList.remove("hide");
 
-  if(score >= 7) {
+  if (score >= 7) {
     scoreText.innerHTML = `${score}/${maxQuestions}`;
     startButton.innerText = "Level 2";
   } else {
