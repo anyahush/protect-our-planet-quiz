@@ -30,6 +30,7 @@ window.onclick = function (event) {
 // constants
 const startButton = document.getElementById("start-btn");
 const nextButton = document.getElementById("next-btn");
+const nextLevelButton = document.getElementById("next-level-btn")
 const playButton = document.getElementById("play-btn");
 const contactButton = document.getElementById("contact-btn");
 const quizContainer = document.getElementById("quiz-container");
@@ -39,7 +40,7 @@ const answerButtons = document.getElementById("answer-btns");
 const scoreText = document.getElementById("score-text");
 const maxQuestions = 10;
 
-const questions = [{
+const easy = [{
     question: 'What is climate change otherwise called global warming?',
     answers: [{
         text: 'Our planet heating up',
@@ -361,7 +362,7 @@ const questions = [{
   }
 ];
 
-const levelTwoQuestions = [{
+const medium = [{
     question: 'An ______ is where all the animals on Earth affect each other',
     answers: [{
         text: 'Ecosystem',
@@ -698,75 +699,75 @@ const levelTwoQuestions = [{
     ]
   },
 
-]
+];
 
-const levelThreeQuestions = [{
-      question: 'How much plastic enters the ocean each year? To give you an idea, 1 tonne of waste is about the same as a great white shark!',
-      answers: [{
-          text: '8 tonnes',
-          correct: false
-        },
-        {
-          text: '800 tonnes',
-          correct: false
-        },
-        {
-          text: '8 million tonnes',
-          correct: true
-        },
-      ]
-    },
-    {
-      question: 'Deforestation is the clearing of forest for use such as farming and houses. Why is deforestation a cause of climate change?',
-      answers: [{
-          text: 'Deforestation does not cause climate change',
-          correct: false
-        },
-        {
-          text: 'It creates new homes for animals',
-          correct: false
-        },
-        {
-          text: 'Trees breathe in carbon dioxide and breathe out oxygen. With less trees means more carbon dioxde, a greenhouse gas, in the atmosphere',
-          correct: true
-        },
-      ]
-    },
-    {
-      question: 'We live in a ‘throwaway culture‘, where many of our things are not built to last. How much waste does every house in the UK produce each year? To give you an idea, 1 tonne of waste is about the same as a great white shark!',
-      answers: [{
-          text: '1 tonne',
-          correct: true
-        },
-        {
-          text: 'Half a tonne',
-          correct: false
-        },
-        {
-          text: 'A quarter of a tonne',
-          correct: false
-        },
-      ]
-    },
-    {
-      question: 'What can you do to reduce how much you throw away?',
-      answers: [{
-          text: 'Buy more things',
-          correct: false
-        },
-        {
-          text: 'Recycle, repair and reuse items',
-          correct: true
-        },
-        {
-          text: 'It does not matter how much you throw away',
-          correct: false
-        },
-      ]
-    },
-    {
-      question: 'Saving electricity is important, as not everyone in the world has access to it. What can you do to save electricity in your house?',
-      answers: [{
+const hard = [{
+    question: 'How much plastic enters the ocean each year? To give you an idea, 1 tonne of waste is about the same as a great white shark!',
+    answers: [{
+        text: '8 tonnes',
+        correct: false
+      },
+      {
+        text: '800 tonnes',
+        correct: false
+      },
+      {
+        text: '8 million tonnes',
+        correct: true
+      },
+    ]
+  },
+  {
+    question: 'Deforestation is the clearing of forest for use such as farming and houses. Why is deforestation a cause of climate change?',
+    answers: [{
+        text: 'Deforestation does not cause climate change',
+        correct: false
+      },
+      {
+        text: 'It creates new homes for animals',
+        correct: false
+      },
+      {
+        text: 'Trees breathe in carbon dioxide and breathe out oxygen. With less trees means more carbon dioxde, a greenhouse gas, in the atmosphere',
+        correct: true
+      },
+    ]
+  },
+  {
+    question: 'We live in a ‘throwaway culture‘, where many of our things are not built to last. How much waste does every house in the UK produce each year? To give you an idea, 1 tonne of waste is about the same as a great white shark!',
+    answers: [{
+        text: '1 tonne',
+        correct: true
+      },
+      {
+        text: 'Half a tonne',
+        correct: false
+      },
+      {
+        text: 'A quarter of a tonne',
+        correct: false
+      },
+    ]
+  },
+  {
+    question: 'What can you do to reduce how much you throw away?',
+    answers: [{
+        text: 'Buy more things',
+        correct: false
+      },
+      {
+        text: 'Recycle, repair and reuse items',
+        correct: true
+      },
+      {
+        text: 'It does not matter how much you throw away',
+        correct: false
+      },
+    ]
+  },
+  {
+    question: 'Saving electricity is important, as not everyone in the world has access to it. What can you do to save electricity in your house?',
+    answers: [{
         text: 'Turn appliances off standby, like the T.V',
         correct: true
       },
@@ -1020,8 +1021,10 @@ const levelThreeQuestions = [{
       },
     ]
   },
-  // let
-  let shuffledQuestions;
+];
+
+// let
+let shuffledQuestions;
 let currentQuestion;
 let currentQuestionIndex;
 let score;
@@ -1040,14 +1043,23 @@ function startGame() {
   contactButton.classList.add("hide");
   greeting.classList.add("hide");
   quizContainer.classList.remove("hide");
+  startLevel(easy);
+}
 
+function startLevel(easy, medium) {
   currentQuestionIndex = 0;
   score = 0;
-
-  shuffledQuestions = questions.sort(() => Math.random() - .5);
-
+  if (easy) {
+    console.log("level 1")
+  shuffledQuestions = easy.sort(() => Math.random() - .5);
+  } else{
+    console.log("level 2");
+    shuffledQuestions = medium.sort(() => Math.random() - .5);
+  }
+  
   nextQuestion();
 }
+
 
 function nextQuestion() {
   resetQuestion();
@@ -1056,9 +1068,10 @@ function nextQuestion() {
   questionCounterText.innerHTML = `${currentQuestionIndex}/${maxQuestions}`
 }
 
-function showQuestion(question) {
-  questionContainer.innerText = question.question;
-  question.answers.forEach(answer => {
+function showQuestion(easy, medium) {
+  if(easy){
+  questionContainer.innerText = easy.question;
+  easy.answers.forEach(answer => {
     const button = document.createElement("button");
     button.innerText = answer.text;
     button.classList.add("btn");
@@ -1068,6 +1081,19 @@ function showQuestion(question) {
     button.addEventListener("click", selectAnswer);
     answerButtons.appendChild(button);
   })
+} else { questionContainer.innerText = medium.question;
+  medium.answers.forEach(answer => {
+    const button = document.createElement("button");
+    button.innerText = answer.text;
+    button.classList.add("btn");
+    if (answer.correct) {
+      button.dataset.correct = answer.correct;
+    }
+    button.addEventListener("click", selectAnswer);
+    answerButtons.appendChild(button);
+  })
+
+}
 
 }
 
@@ -1100,13 +1126,17 @@ function endLevel() {
   answerButtons.classList.add("hide");
   questionContainer.classList.add("hide");
   scoreText.classList.remove("hide");
-  startButton.classList.remove("hide");
+  
 
   if (score >= 7) {
     scoreText.innerHTML = `${score}/${maxQuestions}`;
-    startButton.innerText = "Level 2";
+    nextLevelButton.classList.remove("hide");
+    nextLevelButton.addEventListener("click", startLevel(medium));
+    
   } else {
     scoreText.innerHTML = `${score}/${maxQuestions}`
+    startButton.classList.remove("hide");
     startButton.innerText = "Try again";
+    startButton.addEventListener("click", startLevel(easy));
   }
 }
