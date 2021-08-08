@@ -1,5 +1,8 @@
 # Protect Our Planet
-Insert introduction
+Protect Our Planet is an interactive quiz aimed at 8-12 year old children, with the aim of engaging positively about environmental topics in a fun way. Climate change is something we cannot shy away from and it is important that our children understand how to look after their planet. This quiz aims to introduce topics such as recycling, renewable energy, water efficiency and sustainable transport in an easily digestable and fun way, with the hope of inspiring and empowering young people to take action. 
+&nbsp;
+This project has been developed as the User Centric Frontend Development Milestone 2 Project as part of Code Institute's Software Development Diploma. 
+&nbsp;
 Insert deployed link here
 
 ## Table of Contents
@@ -48,7 +51,14 @@ Parents, Teachers etc. :
 ## Skeleton Plane
 
 ### Wireframes
+The wireframes for this project were developed using [Balsamiq](https://balsamiq.com/).
 
+| Mobile | Tablet| Desktop|
+--------------------|--------------------|--------------------------|
+| [Mobile Home Page](assets/images/readme/wireframes/ms2-home-mobile.png) | [Tablet Home Page](assets/images/readme/wireframes/ms2-home-tablet.png) | [Desktop Home Page](assets/images/readme/wireframes/ms2-home-desktop.png) |
+| [Mobile How to Play Modal](assets/images/readme/wireframes/ms2-play-modal-mobile.png) | [Tablet How to Play Modal](assets/images/readme/wireframes/ms2-play-modal-tablet.png) | [Desktop How to Play Modal](assets/images/readme/wireframes/ms2-play-modal-desktop.png) |
+| [Mobile Contact Form Modal](assets/images/readme/wireframes/ms2-contact-modal-mobile.png) | [Tablet Contact Form Modal](assets/images/readme/wireframes/ms2-contact-modal-mobile.png) | [Desktop Contact Form Modal](assets/images/readme/wireframes/ms2-contact-modal-desktop.png) |
+| [Mobile Quiz Page](assets/images/readme/wireframes/ms2-quiz-mobile.png) | [Tablet Quiz Page](assets/images/readme/wireframes/ms2-quiz-tablet.png) | [Desktop Quiz Page](assets/images/readme/wireframes/ms2-quiz-desktop.png) |
 ### Changes to Wireframes
 
 ## Surface Plane
