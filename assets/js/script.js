@@ -362,6 +362,7 @@ const questions = [{
 ];
 // let
 let shuffledQuestions;
+let currentQuestion;
 let currentQuestionIndex;
 let score;
 
@@ -421,6 +422,11 @@ function selectAnswer(e) {
   const selectedButton = e.target;
   const correct = selectedButton.dataset.correct;
 
+  if (selectedButton.dataset = correct){
+    score++;
+    console.log("1 point");
+  }
+
   if (currentQuestionIndex === maxQuestions) {
     endLevel();
   } else {
@@ -429,17 +435,18 @@ function selectAnswer(e) {
 
 }
 
+
 function endLevel() {
   answerButtons.classList.add("hide");
   questionContainer.classList.add("hide");
   scoreText.classList.remove("hide");
   startButton.classList.remove("hide");
 
-  if(userScore => 7) {
-    scoreText.innerHTML = `${userScore}/${maxQuestions}`;
+  if(score >= 7) {
+    scoreText.innerHTML = `${score}/${maxQuestions}`;
     startButton.innerText = "Level 2";
   } else {
-    scoreText.innerHTML = `${userScore}/${maxQuestions}`
+    scoreText.innerHTML = `${score}/${maxQuestions}`
     startButton.innerText = "Try again";
   }
 }
