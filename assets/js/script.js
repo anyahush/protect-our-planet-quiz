@@ -34,8 +34,10 @@ const playButton = document.getElementById("play-btn");
 const contactButton = document.getElementById("contact-btn");
 const quizContainer = document.getElementById("quiz-container");
 const questionContainer = document.getElementById("question-container");
+const questionCounterText = document.getElementById("question-counter");
 const answerButtons = document.getElementById("answer-btns");
 const scoreText = document.getElementById("score-text");
+const maxQuestions = 10;
 
 const questions = [{
   question: 'What is climate change otherwise called global warming?',
@@ -389,6 +391,8 @@ function startGame () {
 function nextQuestion () {
   resetQuestion();
   showQuestion(shuffledQuestions[currentQuestionIndex]);
+
+  questionCounterText.innerHTML = `${currentQuestionIndex}/${maxQuestions}`
 }
 
 function showQuestion(question) {
@@ -413,6 +417,31 @@ function resetQuestion () {
   }
 }
 
-function selectAnswer () {
+function selectAnswer (e) {
+  const selectedButton = e.target;
+  const correct = selectedButton.dataset.correct;
 
+  if (!correct) {
+    console.log("answer not correct")
+  } else {
+    console.log("amazing, that's right!")
+  }
+
+  if(currentQuestionIndex === maxQuestions) {
+    endLevel();
+    
+
+  } else {
+    nextButton.classList.remove("hide")
+  }
+
+}
+
+function endLevel () {
+  answerButtons.classList.add("hide");
+  questionContainer.classList.add("hide");
+  startButton.classList.remove("hide");
+  scoreText.classList.remove("hide");
+  scoreText.innerText = "Well done!"
+  console.log("game finished")
 }
