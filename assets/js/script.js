@@ -1028,6 +1028,7 @@ let shuffledQuestions;
 let currentQuestion;
 let currentQuestionIndex;
 let score;
+let levelScores= [];
 let level = [easy, medium, hard];
 
 startButton.addEventListener("click", startGame);
@@ -1113,20 +1114,31 @@ function endLevel() {
   answerButtons.classList.add("hide");
   questionContainer.classList.add("hide");
   scoreText.classList.remove("hide");
+  scoreText.innerHTML = `${score}/${maxQuestions}`;
+  
+
   if (score >= 7) {
-    scoreText.innerHTML = `${score}/${maxQuestions}`;
     console.log("next level")
     nextLevelButton.classList.remove("hide");
     nextLevelButton.addEventListener("click", nextLevel)
   } else {
-    scoreText.innerHTML = `${score}/${maxQuestions}`
     startButton.classList.remove("hide");
     startButton.innerText = "Try again";
     startButton.addEventListener("click", startLevel(easy));
   }
+  levelScores.push(score);
+  console.log(levelScores);
 }
 
 function nextLevel () {
-  console.log("level 2");
-  startLevel(medium);
+  if (levelScores[0] >= 7) {
+    console.log("level 2");
+    startLevel(medium);
+  } else if (levelScores[1] >=7) {
+    console.log("level 3");
+    startLevel(hard);
+  } else {
+    console.log("You've finished!");
+  }
+  
 }
