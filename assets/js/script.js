@@ -1048,6 +1048,12 @@ function startGame() {
 }
 
 function startLevel(level) {
+  quizContainer.classList.remove("hide");
+  questionContainer.classList.remove("hide");
+  answerButtons.classList.remove("hide");
+  nextLevelButton.classList.add("hide");
+  scoreText.classList.add("hide");
+
   currentQuestionIndex = 0;
   score = 0;
 
@@ -1066,7 +1072,6 @@ function nextQuestion() {
 }
 
 function showQuestion(level) {
-
   questionContainer.innerText = level.question;
   level.answers.forEach(answer => {
     const button = document.createElement("button");
@@ -1078,7 +1083,6 @@ function showQuestion(level) {
     button.addEventListener("click", selectAnswer);
     answerButtons.appendChild(button);
   })
-
 }
 
 function resetQuestion() {
@@ -1105,20 +1109,15 @@ function selectAnswer(e) {
 
 }
 
-
 function endLevel() {
   answerButtons.classList.add("hide");
   questionContainer.classList.add("hide");
   scoreText.classList.remove("hide");
-
-
   if (score >= 7) {
     scoreText.innerHTML = `${score}/${maxQuestions}`;
     console.log("next level")
     nextLevelButton.classList.remove("hide");
-    nextLevelButton.addEventListener("click", nextLevel);
-
-
+    nextLevelButton.addEventListener("click", nextLevel)
   } else {
     scoreText.innerHTML = `${score}/${maxQuestions}`
     startButton.classList.remove("hide");
