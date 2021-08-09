@@ -1028,6 +1028,7 @@ let shuffledQuestions;
 let currentQuestion;
 let currentQuestionIndex;
 let score;
+let level = [easy, medium, hard];
 
 startButton.addEventListener("click", startGame);
 nextButton.addEventListener("click", () => {
@@ -1046,17 +1047,13 @@ function startGame() {
   startLevel(easy);
 }
 
-function startLevel(easy, medium) {
+function startLevel(level) {
   currentQuestionIndex = 0;
   score = 0;
-  if (easy) {
-    console.log("level 1")
-  shuffledQuestions = easy.sort(() => Math.random() - .5);
-  } else{
-    console.log("level 2");
-    shuffledQuestions = medium.sort(() => Math.random() - .5);
-  }
-  
+
+  console.log("level 1")
+  shuffledQuestions = level.sort(() => Math.random() - .5);
+
   nextQuestion();
 }
 
@@ -1068,32 +1065,19 @@ function nextQuestion() {
   questionCounterText.innerHTML = `${currentQuestionIndex}/${maxQuestions}`
 }
 
-function showQuestion(easy, medium) {
-  if(easy){
-  questionContainer.innerText = easy.question;
-  easy.answers.forEach(answer => {
-    const button = document.createElement("button");
-    button.innerText = answer.text;
-    button.classList.add("btn");
-    if (answer.correct) {
-      button.dataset.correct = answer.correct;
-    }
-    button.addEventListener("click", selectAnswer);
-    answerButtons.appendChild(button);
-  })
-} else { questionContainer.innerText = medium.question;
-  medium.answers.forEach(answer => {
-    const button = document.createElement("button");
-    button.innerText = answer.text;
-    button.classList.add("btn");
-    if (answer.correct) {
-      button.dataset.correct = answer.correct;
-    }
-    button.addEventListener("click", selectAnswer);
-    answerButtons.appendChild(button);
-  })
+function showQuestion(level) {
 
-}
+  questionContainer.innerText = level.question;
+  level.answers.forEach(answer => {
+    const button = document.createElement("button");
+    button.innerText = answer.text;
+    button.classList.add("btn");
+    if (answer.correct) {
+      button.dataset.correct = answer.correct;
+    }
+    button.addEventListener("click", selectAnswer);
+    answerButtons.appendChild(button);
+  })
 
 }
 
@@ -1126,17 +1110,24 @@ function endLevel() {
   answerButtons.classList.add("hide");
   questionContainer.classList.add("hide");
   scoreText.classList.remove("hide");
-  
+
 
   if (score >= 7) {
     scoreText.innerHTML = `${score}/${maxQuestions}`;
+    console.log("next level")
     nextLevelButton.classList.remove("hide");
-    nextLevelButton.addEventListener("click", startLevel(medium));
-    
+    nextLevelButton.addEventListener("click", nextLevel);
+
+
   } else {
     scoreText.innerHTML = `${score}/${maxQuestions}`
     startButton.classList.remove("hide");
     startButton.innerText = "Try again";
     startButton.addEventListener("click", startLevel(easy));
   }
+}
+
+function nextLevel () {
+  console.log("level 2");
+  startLevel(medium);
 }
