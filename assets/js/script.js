@@ -1053,7 +1053,7 @@ function startLevel(level) {
   questionContainer.classList.remove("hide");
   answerButtons.classList.remove("hide");
   nextLevelButton.classList.add("hide");
-  scoreText.classList.add("hide");
+  
 
   currentQuestionIndex = 0;
   score = 0;
@@ -1070,6 +1070,7 @@ function nextQuestion() {
   showQuestion(shuffledQuestions[currentQuestionIndex]);
 
   questionCounterText.innerHTML = `${currentQuestionIndex}/${maxQuestions}`
+  scoreText.innerHTML = `${score}/${maxQuestions}`;
 }
 
 function showQuestion(level) {
@@ -1114,7 +1115,7 @@ function endLevel() {
   answerButtons.classList.add("hide");
   questionContainer.classList.add("hide");
   scoreText.classList.remove("hide");
-  scoreText.innerHTML = `${score}/${maxQuestions}`;
+  
   
 
   if (score >= 7) {
