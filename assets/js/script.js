@@ -1114,11 +1114,8 @@ function selectAnswer(e) {
 function endLevel() {
   answerButtons.classList.add("hide");
   questionContainer.classList.add("hide");
-  scoreText.classList.remove("hide");
-  
-  
 
-  if (score >= 7) {
+    if (score >= 7) {
     console.log("next level")
     nextLevelButton.classList.remove("hide");
     nextLevelButton.addEventListener("click", nextLevel)
@@ -1132,14 +1129,20 @@ function endLevel() {
 }
 
 function nextLevel () {
-  if (levelScores[0] >= 7) {
+  if(levelScores[0] >= 7 && levelScores[1] >=7 && levelScores[2] >=7) {
+    answerButtons.classList.add("hide");
+    questionContainer.classList.add("hide");
+    nextLevelButton.classList.add("hide");
+    console.log("You've completed the game!");
+
+  } else if (levelScores[0] >= 7 && levelScores[1] >= 7) {
+    console.log("level 3");
+    nextLevelButton.classList.remove("hide");
+    nextLevelButton.innerText = "Level 3";
+    nextLevelButton.addEventListener("click", startLevel(hard));
+  } else if (levelScores[0] >=7) {
     console.log("level 2");
     startLevel(medium);
-  } else if (levelScores[1] >=7) {
-    console.log("level 3");
-    startLevel(hard);
-  } else {
-    console.log("You've finished!");
-  }
+  } 
   
 }
