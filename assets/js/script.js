@@ -1037,6 +1037,7 @@ nextButton.addEventListener("click", () => {
   nextQuestion();
 })
 
+// Starts game
 function startGame() {
   console.log("Game started");
 
@@ -1048,6 +1049,7 @@ function startGame() {
   startLevel(easy);
 }
 
+// Starts a new level
 function startLevel(level) {
   quizContainer.classList.remove("hide");
   questionContainer.classList.remove("hide");
@@ -1064,7 +1066,7 @@ function startLevel(level) {
   nextQuestion();
 }
 
-
+//Shows next question
 function nextQuestion() {
   resetQuestion();
   showQuestion(shuffledQuestions[currentQuestionIndex]);
@@ -1073,6 +1075,7 @@ function nextQuestion() {
   scoreText.innerHTML = `${score}/${maxQuestions}`;
 }
 
+//Displays question
 function showQuestion(level) {
   questionContainer.innerText = level.question;
   level.answers.forEach(answer => {
@@ -1087,6 +1090,7 @@ function showQuestion(level) {
   })
 }
 
+// Resets question
 function resetQuestion() {
   nextButton.classList.add("hide");
   while (answerButtons.firstChild) {
@@ -1094,6 +1098,7 @@ function resetQuestion() {
   }
 }
 
+// Assesses whether selected answer is correct and adds to score
 function selectAnswer(e) {
   const selectedButton = e.target;
   const correct = selectedButton.dataset.correct;
@@ -1111,11 +1116,20 @@ function selectAnswer(e) {
 
 }
 
+//Ends level once max questions reached
 function endLevel() {
   answerButtons.classList.add("hide");
   questionContainer.classList.add("hide");
 
-    if (score >= 7) {
+  levelScores.push(score);
+  console.log(levelScores);
+  if(levelScores[0] >= 7 && levelScores[1] >=7 && levelScores[2] >=7) {
+    answerButtons.classList.add("hide");
+    questionContainer.classList.add("hide");
+    nextLevelButton.classList.add("hide");
+    console.log("You've completed the game!");
+
+   }else if (score >= 7) {
     console.log("next level")
     nextLevelButton.classList.remove("hide");
     nextLevelButton.addEventListener("click", nextLevel)
@@ -1124,18 +1138,18 @@ function endLevel() {
     startButton.innerText = "Try again";
     startButton.addEventListener("click", startLevel(easy));
   }
-  levelScores.push(score);
-  console.log(levelScores);
+  
 }
 
-function nextLevel () {
-  if(levelScores[0] >= 7 && levelScores[1] >=7 && levelScores[2] >=7) {
-    answerButtons.classList.add("hide");
-    questionContainer.classList.add("hide");
-    nextLevelButton.classList.add("hide");
-    console.log("You've completed the game!");
 
-  } else if (levelScores[0] >= 7 && levelScores[1] >= 7) {
+function nextLevel () {
+  // if(levelScores[0] >= 7 && levelScores[1] >=7 && levelScores[2] >=7) {
+  //   answerButtons.classList.add("hide");
+  //   questionContainer.classList.add("hide");
+  //   nextLevelButton.classList.add("hide");
+  //   console.log("You've completed the game!");
+
+if (levelScores[0] >= 7 && levelScores[1] >= 7) {
     console.log("level 3");
     nextLevelButton.classList.remove("hide");
     nextLevelButton.innerText = "Level 3";
