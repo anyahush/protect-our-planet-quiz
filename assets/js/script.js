@@ -1060,7 +1060,7 @@ function startLevel(level) {
   currentQuestionIndex = 0;
   score = 0;
 
-  console.log("level 1")
+  console.log("new level")
   shuffledQuestions = level.sort(() => Math.random() - .5);
 
   nextQuestion();
@@ -1124,8 +1124,6 @@ function endLevel() {
   levelScores.push(score);
   console.log(levelScores);
   if(levelScores[0] >= 7 && levelScores[1] >=7 && levelScores[2] >=7) {
-    answerButtons.classList.add("hide");
-    questionContainer.classList.add("hide");
     nextLevelButton.classList.add("hide");
     console.log("You've completed the game!");
 
@@ -1134,21 +1132,16 @@ function endLevel() {
     nextLevelButton.classList.remove("hide");
     nextLevelButton.addEventListener("click", nextLevel)
   } else {
+    console.log("Try again");
     startButton.classList.remove("hide");
     startButton.innerText = "Try again";
-    startButton.addEventListener("click", startLevel(easy));
+    startButton.addEventListener("click", startGame);
   }
   
-}
+};
 
 
 function nextLevel () {
-  // if(levelScores[0] >= 7 && levelScores[1] >=7 && levelScores[2] >=7) {
-  //   answerButtons.classList.add("hide");
-  //   questionContainer.classList.add("hide");
-  //   nextLevelButton.classList.add("hide");
-  //   console.log("You've completed the game!");
-
 if (levelScores[0] >= 7 && levelScores[1] >= 7) {
     console.log("level 3");
     nextLevelButton.classList.remove("hide");
@@ -1159,4 +1152,4 @@ if (levelScores[0] >= 7 && levelScores[1] >= 7) {
     startLevel(medium);
   } 
   
-}
+};
