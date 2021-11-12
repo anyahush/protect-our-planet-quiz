@@ -1059,6 +1059,15 @@ function startLevel(level) {
   answerButtons.classList.remove("hide");
   nextLevelButton.classList.add("hide");
 
+  // Changes level heading 
+  if(levelScores[1] > 0) {
+    levelHeading.innerText = 3;
+  } else if(levelScores[0] > 0) {
+    levelHeading.innerText = 2;
+  } else {
+    levelHeading.innerText =1;
+  }
+
   currentQuestionIndex = 0;
   score = 0;
 
@@ -1104,7 +1113,7 @@ function resetQuestion() {
 function selectAnswer(e) {
   const selectedButton = e.target;
   const correct = selectedButton.dataset.correct;
-
+  
 
 
   if (selectedButton.dataset = correct) {
@@ -1114,6 +1123,7 @@ function selectAnswer(e) {
 
   } else if (selectedButton.dataset != correct) {
     selectedButton.style.backgroundColor = 'red';
+
   }
 
   if (currentQuestionIndex === maxQuestions) {
