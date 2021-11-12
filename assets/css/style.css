@@ -22,6 +22,7 @@ h2 {
     font-weight: 900;
     text-transform: uppercase;
     font-size: 180%;
+    padding: 5px;
 }
 h3 {
     font-weight: 900;
@@ -32,7 +33,7 @@ h3 {
     font-family: 'Mohave';
     font-size: 120%;
     width: 300px;
-    height: 550px;
+    height: 600px;
     text-align: center;
     background-color: #b7e6d3;
     opacity: 0.8;
@@ -41,15 +42,25 @@ h3 {
     padding: 25px;
 }
 
+
+
+#question-container {
+    padding: 10px;
+}
+
 #answer-btns {
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 20px 0;
 
 }
 
-#answer-btns button {
-    padding: 10px;
+.btn {
+    color: red;
+    font-size: 110%;
+    border: 1px solid green;
+    padding: 10px 0;
+    margin: 10px;
 }
 
 #counter-container {
