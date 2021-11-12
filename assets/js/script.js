@@ -43,7 +43,7 @@ const scoreText = document.getElementById("score-text");
 const maxQuestions = 10;
 
 const easy = [{
-    question: 'What is climate change otherwise called global warming?',
+    question: 'What is climate change?',
     answers: [{
         text: 'Our planet heating up',
         correct: true
@@ -91,7 +91,7 @@ const easy = [{
     ]
   },
   {
-    question: 'Using _____ energy damages the habitats of animals and plants and contributes to global warming.',
+    question: 'Using _____ energy damages the habitats of animals and plants and adds to climate change.',
     answers: [{
         text: 'Renewable',
         correct: false
@@ -221,7 +221,7 @@ const easy = [{
   {
     question: 'What causes climate change?',
     answers: [{
-        text: 'Burning fossil fuels such as coal',
+        text: 'Burning fossil fuels, such as coal',
         correct: true
       },
       {
@@ -235,7 +235,7 @@ const easy = [{
     ]
   },
   {
-    question: 'Instead of buying disposable plastic bottles, which one is a solution?',
+    question: 'Instead of buying disposable plastic bottles, what is a solution?',
     answers: [{
         text: 'Don"t drink water out of bottles',
         correct: false
@@ -253,7 +253,7 @@ const easy = [{
   {
     question: 'What is a fossil fuel?',
     answers: [{
-        text: 'A natural fuel formed over millions of years from the remains of dead animals and plants.',
+        text: 'A natural fuel formed over millions of years from dead animals and plants.',
         correct: true
       },
       {
@@ -299,9 +299,9 @@ const easy = [{
     ]
   },
   {
-    question: 'Why does driving cars contribute to climate change?',
+    question: 'Why does driving cars add to climate change?',
     answers: [{
-        text: 'Petrol and diesel, that fuel cars, are fossil fuels and release greenhouse gases',
+        text: 'Petrol and diesel are fossil fuels and release greenhouse gases',
         correct: true
       },
       {
@@ -315,7 +315,7 @@ const easy = [{
     ]
   },
   {
-    question: ' Instead of travelling by car, how can you travel that is better for the environment?',
+    question: ' Instead of travelling by car, which option is better for the environment?',
     answers: [{
         text: 'Aeroplane',
         correct: false
@@ -331,7 +331,7 @@ const easy = [{
     ]
   },
   {
-    question: 'Climate change affects wildlife as well. Arctic ice is melting, which animal lives there and is at risk?',
+    question: 'Climate change affects wildlife as well. Arctic ice is melting, which animal lives there?',
     answers: [{
         text: 'Apes',
         correct: false
@@ -479,21 +479,21 @@ const medium = [{
   {
     question: 'What is a greenhouse gas?',
     answers: [{
-        text: 'A gas that traps heat on Earth, preventing it from returning to space',
+        text: 'A gas that traps heat on Earth',
         correct: true
       },
       {
-        text: 'A gas produced by the infamous green housefly',
+        text: 'A gas produced by the green housefly',
         correct: false
       },
       {
-        text: 'A gas that builds up in a greenhouse after plants have had too many burritos',
+        text: 'When plants have had too many burritos',
         correct: false
       },
     ]
   },
   {
-    question: 'Saving water is important so we can make sure we have enough clean water, even in very wet countries! Which of these actions could you do to save water?',
+    question: 'Saving water is also important. How could you do to save water?',
     answers: [{
         text: 'Leaving the tap running when your brush your teeth',
         correct: false
@@ -525,7 +525,7 @@ const medium = [{
     ]
   },
   {
-    question: 'How would you dispose of a book if you no longer needed it?',
+    question: "What would you do with a book you didn't want anywmore?",
     answers: [{
         text: 'Throw it in the bin',
         correct: false
@@ -573,7 +573,7 @@ const medium = [{
     ]
   },
   {
-    question: 'What have most governments agreed to do to help stop global warming?',
+    question: 'What have a lot governments agreed to do to help stop global warming?',
     answers: [{
         text: 'Chop down rainforests',
         correct: false
@@ -621,17 +621,17 @@ const medium = [{
     ]
   },
   {
-    question: 'Why is it a good idea to turn off lights and other electronics when not using them?',
+    question: 'Why is it good to turn off lights and other electronics when not using them?',
     answers: [{
         text: 'Because adults say so',
         correct: false
       },
       {
-        text: 'Because the lights might get bored',
+        text: 'The lights might get bored',
         correct: false
       },
       {
-        text: 'Because the energy used to power lights is often powered by fossil fuels, and we need to save energy',
+        text: 'We need to save electricity too',
         correct: true
       },
     ]
@@ -675,7 +675,7 @@ const medium = [{
         correct: false
       },
       {
-        text: 'Flying to the beach with friends in seperate planes',
+        text: 'Flying to the beach with friends',
         correct: false
       },
       {
@@ -685,7 +685,7 @@ const medium = [{
     ]
   },
   {
-    question: 'A warmer climate can affect our planet in lots of ways such as more rain, shrinking sea ice and ________',
+    question: 'A warmer climate can affect our planet in lots of ways such as more rain, melting sea ice and ________',
     answers: [{
         text: 'Rising sea levels',
         correct: false
@@ -704,7 +704,7 @@ const medium = [{
 ];
 
 const hard = [{
-    question: 'How much plastic enters the ocean each year? To give you an idea, 1 tonne of waste is about the same as a great white shark!',
+    question: 'How much plastic enters the ocean each year? For exmaple: 1 tonne of waste is about the same as a great white shark!',
     answers: [{
         text: '8 tonnes',
         correct: false
@@ -720,7 +720,7 @@ const hard = [{
     ]
   },
   {
-    question: 'Deforestation is the clearing of forest for use such as farming and houses. Why is deforestation a cause of climate change?',
+    question: 'Deforestation is the clearing of forest for farming and houses. Why is deforestation a cause of climate change?',
     answers: [{
         text: 'Deforestation does not cause climate change',
         correct: false
@@ -730,13 +730,13 @@ const hard = [{
         correct: false
       },
       {
-        text: 'Trees breathe in carbon dioxide and breathe out oxygen. With less trees means more carbon dioxde, a greenhouse gas, in the atmosphere',
+        text: 'Trees breathe in carbon dioxide, less trees means more carbon dioxde in the atmosphere',
         correct: true
       },
     ]
   },
   {
-    question: 'We live in a ‘throwaway culture‘, where many of our things are not built to last. How much waste does every house in the UK produce each year? To give you an idea, 1 tonne of waste is about the same as a great white shark!',
+    question: 'How much waste does every house in the UK produce each year? For example: 1 tonne of waste is about the same as a great white shark!',
     answers: [{
         text: '1 tonne',
         correct: true
@@ -794,13 +794,13 @@ const hard = [{
         correct: false
       },
       {
-        text: 'Wind turbines work best with no obstructions that block the wind',
+        text: 'Wind turbines work best when nothing blocks the wind',
         correct: true
       },
     ]
   },
   {
-    question: 'What kind of energy turns wind turbines in wind farms?',
+    question: 'What kind of energy turns wind turbines?',
     answers: [{
         text: 'Potential energy',
         correct: false
@@ -826,13 +826,13 @@ const hard = [{
         correct: true
       },
       {
-        text: 'Not recycling',
+        text: 'NOT recycling',
         correct: false
       },
     ]
   },
   {
-    question: 'What is the name given to the network of pylons and power lines that provide electricity to buildings?',
+    question: 'What is the name given to the network of pylons and power lines that provide electricity?',
     answers: [{
         text: 'The National Grid',
         correct: true
@@ -896,7 +896,7 @@ const hard = [{
     ]
   },
   {
-    question: 'Why should batteries not go to landfill?',
+    question: 'Why should batteries NOT go to landfill?',
     answers: [{
         text: 'They can be recharged',
         correct: false
@@ -928,7 +928,7 @@ const hard = [{
     ]
   },
   {
-    question: 'All over the world wild places are in trouble but there are things you can do to help protect them. Which one do you think is right?',
+    question: 'What can you do to help wild spaces and protect wildlife?',
     answers: [{
         text: 'Walking off designated paths',
         correct: false
@@ -944,7 +944,7 @@ const hard = [{
     ]
   },
   {
-    question: 'Eating sustainably is something we can do to take pressure off natural resources such as ecosystems and the ocean. How could you do that?',
+    question: 'Eating sustainably is something we can do to take pressure off our natural resources. How could you do that?',
     answers: [{
         text: 'Eat some vegan and vegetarian meals',
         correct: true
@@ -966,7 +966,7 @@ const hard = [{
         correct: false
       },
       {
-        text: 'Coral reefs, in the oceans, gettinh sick and losing their colour',
+        text: 'Coral reefs, in the oceans, getting sick and losing their colour',
         correct: true
       },
       {
@@ -978,11 +978,11 @@ const hard = [{
   {
     question: 'Why are electric cars a good way to help reduce global warming?',
     answers: [{
-        text: 'They go so fast that the wind they create helps to keep Earth cool',
+        text: 'They go so fast, the wind they create helps to keep Earth cool',
         correct: false
       },
       {
-        text: 'Electric cars are super cool. They are SO cool, they actually cool the Earth down',
+        text: 'Electric cars are super cool. They are SO cool, they cool the Earth down',
         correct: false
       },
       {
