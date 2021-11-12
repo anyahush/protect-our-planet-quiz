@@ -1058,7 +1058,7 @@ function startLevel(level) {
   questionContainer.classList.remove("hide");
   answerButtons.classList.remove("hide");
   nextLevelButton.classList.add("hide");
-  
+
   currentQuestionIndex = 0;
   score = 0;
 
@@ -1105,9 +1105,15 @@ function selectAnswer(e) {
   const selectedButton = e.target;
   const correct = selectedButton.dataset.correct;
 
+
+
   if (selectedButton.dataset = correct) {
     score++;
     console.log("1 point");
+    selectedButton.style.backgroundColor = 'green';
+
+  } else if (selectedButton.dataset != correct) {
+    selectedButton.style.backgroundColor = 'red';
   }
 
   if (currentQuestionIndex === maxQuestions) {
