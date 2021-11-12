@@ -37,7 +37,9 @@ const quizContainer = document.getElementById("quiz-container");
 const questionContainer = document.getElementById("question-container");
 const questionCounterText = document.getElementById("question-counter");
 const answerButtons = document.getElementById("answer-btns");
+const levelHeading = document.getElementById("level-heading");
 const scoreText = document.getElementById("score-text");
+
 const maxQuestions = 10;
 
 const easy = [{
@@ -1028,8 +1030,9 @@ let shuffledQuestions;
 let currentQuestion;
 let currentQuestionIndex;
 let score;
-let levelScores= [];
+let levelScores = [];
 let level = [easy, medium, hard];
+
 
 startButton.addEventListener("click", startGame);
 nextButton.addEventListener("click", () => {
@@ -1056,7 +1059,6 @@ function startLevel(level) {
   answerButtons.classList.remove("hide");
   nextLevelButton.classList.add("hide");
   
-
   currentQuestionIndex = 0;
   score = 0;
 
@@ -1123,11 +1125,11 @@ function endLevel() {
 
   levelScores.push(score);
   console.log(levelScores);
-  if(levelScores[0] >= 7 && levelScores[1] >=7 && levelScores[2] >=7) {
+  if (levelScores[0] >= 7 && levelScores[1] >= 7 && levelScores[2] >= 7) {
     nextLevelButton.classList.add("hide");
     console.log("You've completed the game!");
 
-   }else if (score >= 7) {
+  } else if (score >= 7) {
     console.log("next level")
     nextLevelButton.classList.remove("hide");
     nextLevelButton.addEventListener("click", nextLevel)
@@ -1137,19 +1139,19 @@ function endLevel() {
     startButton.innerText = "Try again";
     startButton.addEventListener("click", startGame);
   }
-  
+
 };
 
 
-function nextLevel () {
-if (levelScores[0] >= 7 && levelScores[1] >= 7) {
+function nextLevel() {
+  if (levelScores[0] >= 7 && levelScores[1] >= 7) {
     console.log("level 3");
     nextLevelButton.classList.remove("hide");
     nextLevelButton.innerText = "Level 3";
     nextLevelButton.addEventListener("click", startLevel(hard));
-  } else if (levelScores[0] >=7) {
+  } else if (levelScores[0] >= 7) {
     console.log("level 2");
     startLevel(medium);
-  } 
-  
+  }
+
 };

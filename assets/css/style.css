@@ -40,6 +40,19 @@ h3 {
     padding: 25px;
 }
 
+#answer-btns {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+}
+
+#answer-btns button {
+    padding: 10px;
+}
+
+
+
   /* amended code from W3 school */
   /* modal content box */
   .modal-content {
