@@ -1074,7 +1074,7 @@ function nextQuestion() {
   showQuestion(shuffledQuestions[currentQuestionIndex]);
 
   questionCounterText.innerHTML = `${currentQuestionIndex}/${maxQuestions}`
-  scoreText.innerHTML = `${score}/${maxQuestions}`;
+  scoreText.innerHTML = `${score}`;
 }
 
 //Displays question

@@ -19,7 +19,7 @@
             </header>
         </div>
 
-        <div id="main-container" >
+        <div id="main-container">
             <div id="greeting">
                 <h2>Greetings Earthlings!</h2>
                 <p>Carbon Kid and Eco Girl need your help to protect our planet! <br> Your mission is to learn about the
@@ -29,7 +29,7 @@
             <div id="quiz-container" class="hide">
                 <div>
                     <h2>Level <span id="level-heading"></span></h2>
-                    <span id="question-counter"></span>
+
                 </div>
                 <div id="question-container">Questions</div>
                 <div id="answer-btns">
@@ -37,11 +37,14 @@
                     <button>Answer 2</button>
                     <button>Answer 3</button>
                 </div>
-                <div id="correct-counter">
-                    <h3>Correct:</h3>
-                    <div id="score-text"></div>
+                <div id="counter-container">
+                    <div>
+                        <div id="question-counter"></div>
+                    </div>
+                    <div id="correct-counter">
+                        <h3>Score: <span  id="score-text"></span></h3>
+                    </div>
                 </div>
-                
             </div>
             <div>
                 <button id="start-btn" class="home-btns">Let's Play</button>
@@ -55,7 +58,8 @@
                     <div class="modal-content">
                         <span class="close">&times;</span>
                         <h3>Welcome to Protect Our Planet</h3>
-                        <p>The aim of this quiz is to test your knowledge on climate change and the environment and help
+                        <p>The aim of this quiz is to test your knowledge on climate change and the environment and
+                            help
                             Carbon Kid and Eco Girl protect the planet!
                             <br>
                             The quiz is split into 3 levels.

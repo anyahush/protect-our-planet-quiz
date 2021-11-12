@@ -28,6 +28,7 @@ h3 {
     text-transform: uppercase;
 }
 #main-container {
+    position: relative;
     font-family: 'Mohave';
     font-size: 120%;
     width: 300px;
@@ -51,6 +52,12 @@ h3 {
     padding: 10px;
 }
 
+#counter-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
 
 
   /* amended code from W3 school */
