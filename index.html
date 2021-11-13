@@ -99,17 +99,22 @@
                             <h2>Contact</h2>
                         </div>
                         <div class="modal-body">
-                            <p>Any questions, we are here to help</p>
+                            <p>If you have any questions or feedback, please do not hesitate to contact.
+                                <br>
+                                We are happy to help! </p>
 
-                            <form onsubmit="return sendMail(this);">
+                            <form id="contact-form" onsubmit="return sendMail(this);">
                                 <div>
-                                    <input type="text" class="form-input" id="name" placeholder="Name" name="name" required>
+                                    <input type="text" class="form-input" id="name" placeholder="Name" name="name"
+                                        required>
                                 </div>
                                 <div>
-                                    <input type="email" class="form-input"id="email" placeholder="Email" name="email" required>
+                                    <input type="email" class="form-input" id="email" placeholder="Email" name="email"
+                                        required>
                                 </div>
                                 <div>
-                                    <textarea name="message" id="" rows="10" id="message" placeholder="Message" required></textarea>
+                                    <textarea name="message" class="form-input" rows="10" id="message"
+                                        placeholder="Message" required></textarea>
                                 </div>
                                 <button type="submit">Send</button>
                             </form>

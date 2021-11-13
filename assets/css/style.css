@@ -10,6 +10,7 @@
     position: sticky;
 }
 
+
 h1 {
     font-family: 'Luckiest Guy';
     text-align: center;
@@ -28,6 +29,29 @@ h3 {
     font-weight: 900;
     text-transform: uppercase;
 }
+
+
+@media only screen and (min-width: 769px) {
+    #landing-page-container {
+        background: url('../images/landing-page-tablet.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        min-height: 100vh;
+        background-size: cover;
+        position: sticky;
+    }
+    h1 {
+        font-size: 500%;
+    }
+    #main-container {
+        width: 350px;
+        height: 650px;
+        font-size: 150%;
+    }
+}
+
+/* Quiz */
+
 #main-container {
     position: relative;
     font-family: 'Mohave';
@@ -70,26 +94,7 @@ h3 {
 
 }
 
-/* media queries */
 
-@media only screen and (min-width: 769px) {
-    #landing-page-container {
-        background: url('../images/landing-page-tablet.png');
-        background-repeat: no-repeat;
-        background-position: center;
-        min-height: 100vh;
-        background-size: cover;
-        position: sticky;
-    }
-    h1 {
-        font-size: 500%;
-    }
-    #main-container {
-        width: 350px;
-        height: 650px;
-        font-size: 150%;
-    }
-}
 
 /* javascript */
 
@@ -110,7 +115,7 @@ h3 {
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+    background-color: rgba(0,0,0,1); /* Black w/ opacity */
 }
 
 /* Modal Content */
@@ -127,6 +132,9 @@ h3 {
     animation-duration: 0.4s
 }
 
+p {
+    padding: 10px;
+}
 /* Add Animation */
 @-webkit-keyframes animatetop {
     from {top:-300px; opacity:0}
@@ -163,3 +171,32 @@ h3 {
 
 .modal-body {padding: 2px 16px;}
 
+/* contact form */
+
+.form-input {
+    width: 100%;
+    padding: 5px;
+    margin: 5px;
+    border-color: #000;
+    border-radius: 3px;
+}
+
+input[type=text]:focus {
+    outline-color: #5cb85c;
+}
+
+input[type=email]:focus {
+    outline-color: #5cb85c;
+}
+
+textarea:focus {
+    outline-color: #5cb85c;
+}
+
+@media only screen and (min-width: 769px) {
+    .form-input {
+        width: 50%;
+    }
+}
+
+/* media queries */
