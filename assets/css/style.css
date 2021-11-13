@@ -21,7 +21,7 @@ h1 {
 h2 {
     font-weight: 900;
     text-transform: uppercase;
-    font-size: 180%;
+    font-size: 200%;
     padding: 5px;
 }
 h3 {
@@ -70,30 +70,6 @@ h3 {
 
 }
 
-
-  /* amended code from W3 school */
-  /* modal content box */
-  .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto; 
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%; 
-  }
-  .close {
-    color: #aaa;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-  } 
-/* /amended code from W3 schools */
-
 /* media queries */
 
 @media only screen and (min-width: 769px) {
@@ -127,14 +103,14 @@ h3 {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    padding-top: 150px; /* Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
 }
 
 /* Modal Content */
@@ -143,7 +119,6 @@ h3 {
     background-color: #fefefe;
     margin: auto;
     padding: 0;
-    border: 1px solid #888;
     width: 80%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     -webkit-animation-name: animatetop;
@@ -179,15 +154,12 @@ h3 {
 }
 
 .modal-header {
+    display: inline;
     padding: 2px 16px;
     background-color: #5cb85c;
     color: white;
 }
+
 
 .modal-body {padding: 2px 16px;}
 
-.modal-footer {
-    padding: 2px 16px;
-    background-color: #5cb85c;
-    color: white;
-}
