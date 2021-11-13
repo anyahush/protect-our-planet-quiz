@@ -36,7 +36,7 @@
                         <div id="question-counter"></div>
                     </div>
                     <div id="correct-counter">
-                        <h3>Score: <span  id="score-text"></span></h3>
+                        <h3>Score: <span id="score-text"></span></h3>
                     </div>
                 </div>
                 <div id="question-container">Questions</div>
@@ -45,7 +45,7 @@
                     <button class="answers">Answer 2</button>
                     <button class="answers">Answer 3</button>
                 </div>
-               
+
             </div>
             <div>
                 <button id="start-btn" class="home-btns">Let's Play</button>
@@ -54,11 +54,17 @@
             </div>
 
             <div>
-                <button id="play-btn" class="home-btns">How to Play</button>
-                <div id="my-modal" class="modal">
+            <!--Modal content modified from Stack Overflow-->
+                <!-- Trigger/Open The Modal -->
+                <button id="play-btn" class="modal-button" href="#myModal1">How to Play</button>
+                <!-- The Modal -->
+                <div id="myModal1" class="modal">
+                    <!-- Modal content -->
                     <div class="modal-content">
-                        <span class="close">&times;</span>
-                        <h3>Welcome to Protect Our Planet</h3>
+                        <div class="modal-header">
+                            <span class="close">×</span>
+                            <h2>Welcome to Protect Our Planet</h2>
+                        </div>
                         <p>The aim of this quiz is to test your knowledge on climate change and the environment and
                             help
                             Carbon Kid and Eco Girl protect the planet!
@@ -74,9 +80,30 @@
             </div>
 
             <div>
-                <button id="contact-btn" class="home-btns">Contact</button>
+                <!-- Trigger/Open The Modal -->
+                <button id="contact-btn" class="modal-button" href="#myModal2">Contact</button>
+                <!-- The Modal -->
+                <div id="myModal2" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span class="close">×</span>
+                            <h2>Contact</h2>
+                        </div>
+                        <div class="modal-body">
+                            <p>Some text in the Modal Body</p>
+                            <p>Some other text...</p>
+                        </div>
+                        <div class="modal-footer">
+                            <h3>Modal Footer</h3>
+                        </div>
+                    </div>
+                </div>
             </div>
+        <!--End of modified content from Stack Overflow-->
         </div>
+
     </div>
     <script src="assets/js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
