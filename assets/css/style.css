@@ -216,3 +216,21 @@ textarea:focus {
         width: 50%;
     }
 }
+
+/*footer*/
+
+footer {
+    display: flex;
+    color: #000;
+    font-size: 80%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    justify-content: center;  
+}
+
+#footer {
+    padding: 0;
+    margin: auto;
+}
