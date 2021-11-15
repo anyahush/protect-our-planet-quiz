@@ -54,6 +54,8 @@ const questionCounterText = document.getElementById("question-counter");
 const answerButtons = document.getElementById("answer-btns");
 const levelHeading = document.getElementById("level-heading");
 const scoreText = document.getElementById("score-text");
+const greetingHeading = document.getElementById('greeting-heading');
+const greetingInfo = document.getElementById("greeting-info");
 
 const correctSound = document.getElementById("correct-sound");
 const incorrectSound = document.getElementById("incorrect-sound");
@@ -418,7 +420,7 @@ const medium = [{
   {
     question: 'Which of the following could you do to help the planet’s ecosystem?',
     answers: [{
-        text: 'Recyle',
+        text: 'Recycle',
         correct: true
       },
       {
@@ -933,7 +935,7 @@ const hard = [{
   {
     question: 'What is the ozone layer?',
     answers: [{
-        text: 'A protective layer aroun the Earth',
+        text: 'A protective layer around the Earth',
         correct: true
       },
       {
@@ -1164,6 +1166,10 @@ function endLevel() {
   console.log(levelScores);
   if (levelScores[0] >= 7 && levelScores[1] >= 7 && levelScores[2] >= 7) {
     nextLevelButton.classList.add("hide");
+    quizContainer.classList.add('hide');
+    greeting.classList.remove("hide");
+    greetingHeading.innerText = "Congratulations!";
+    greetingInfo.innerText = "You have completed PROTECT OUR PLANET! Remember, give these actions a go!";
     levelCompleteSound.play();
     console.log("You've completed the game!");
 
@@ -1174,6 +1180,10 @@ function endLevel() {
   } else {
     console.log("Try again");
     incorrectSound.play();
+    quizContainer.classList.add('hide');
+    greeting.classList.remove("hide");
+    greetingHeading.innerText = "Ooops!";
+    greetingInfo.innerText = "You didn't get enough points to get to the next level. Give it a go, and try again!";
     startButton.classList.remove("hide");
     startButton.innerText = "Try again";
     startButton.addEventListener("click", startGame);
