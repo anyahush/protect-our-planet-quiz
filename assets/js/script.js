@@ -35,6 +35,11 @@ window.onclick = function(event) {
     }
 }
 
+// Contact form
+function alertMessage() {
+  alert("Thank you for your enquiry. We will respond as soon as possible.");
+}
+
 // quiz amended from web dev simplified 
 
 // constants
@@ -1190,3 +1195,5 @@ function nextLevel() {
   }
 
 };
+
+// 
