@@ -30,6 +30,13 @@ h3 {
     text-transform: uppercase;
 }
 
+.quiz-btn {
+    text-transform: uppercase;
+    font-size: 150%;
+    border-radius: 5px;
+    margin: 10px;
+}
+
 
 @media only screen and (min-width: 769px) {
     #landing-page-container {
@@ -199,5 +206,3 @@ textarea:focus {
         width: 50%;
     }
 }
-
-/* media queries */
