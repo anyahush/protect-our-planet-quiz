@@ -3,7 +3,7 @@ Protect Our Planet is an interactive quiz aimed at 8-12 year old children, with 
 &nbsp;
 This project has been developed as the User Centric Frontend Development Milestone 2 Project as part of Code Institute's Software Development Diploma. 
 &nbsp;
-Insert deployed link here
+Deployed website can be viewed [here](https://github.com/anyahush/protect-our-planet-quiz).
 
 ## Table of Contents
 
@@ -86,7 +86,7 @@ The following steps were followed to deploy the project to a live website in Git
 
 - Ensure changes have been added and commited in Gitpod and pushed to GitHub.
 - Login to GitHub.
-- Locate the relevant repository on GitHub. This is the repository for [Sunrise Yoga](https://github.com/anyahush/sunrise-yoga).
+- Locate the relevant repository on GitHub. This is the repository for [Protect Our Planet](https://github.com/anyahush/protect-our-planet-quiz).
 - At the top of the repository, locate the 'Settings' link and click on this.
 - On the left of the page, under Options, scroll down until you get to Pages and click on Pages.
 - Under Source, in the first box called "None", click the dropdown and select "master".
@@ -117,6 +117,26 @@ A clone of the repository can be made, which will create a local copy on your ow
 
 ### Content
 
+#### Question Content
+The question content was sourced from several educational websites, that are as follows:
+- [National Geographic Kids](https://www.natgeokids.com/uk/discover/geography/general-geography/what-is-climate-change/)
+- [NASA Climate Kids](https://climatekids.nasa.gov/)
+
+#### Code Content
+- The code for both modals was modified from a [Stack Overflow](https://stackoverflow.com/questions/40645032/creating-multiple-modals-on-a-single-page) response.
+- The code for the quiz was modified from [Web Dev Simplified](https://github.com/WebDevSimplified/JavaScript-Quiz-App) and his [YouTube Tutorial](https://www.youtube.com/watch?v=riDzcEQbX6k&ab_channel=WebDevSimplified) was used in conjuction.
+- The code to sent up emailjs was modified from [Code Institute Solutions](https://github.com/Code-Institute-Solutions/InteractiveFrontendDevelopment-Resume).
+
 ### Media
+
+#### Images
+- Landing page graphics designed using [Pixton](https://app.pixton.com)
+
+#### Sound
+The mp3 files were downloaded from [Orange Free Sounds](https://orangefreesounds.com/).
+- [Winning Victory Sound](https://orangefreesounds.com/quiz-correct-wining-victory-sound-effect/)
+- [Game Show Winner Sound](https://orangefreesounds.com/game-show-winner-sound-effect/)
+- [You Loose Sound](https://orangefreesounds.com/you-lose-sound-effect/)
+
 
 ## Acknowledegments
