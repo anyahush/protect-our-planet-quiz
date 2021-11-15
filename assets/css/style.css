@@ -22,8 +22,8 @@ h1 {
 h2 {
     font-weight: 900;
     text-transform: uppercase;
-    font-size: 200%;
-    padding: 5px;
+    font-size: 250%;
+    padding: 15px 0 0;
 }
 h3 {
     font-weight: 900;
@@ -79,13 +79,13 @@ h3 {
 
 }
 
-.btn {
+/* .btn {
     color: red;
     font-size: 110%;
     border: 1px solid green;
     padding: 10px 0;
     margin: 10px;
-}
+} */
 
 #counter-container {
     display: flex;
@@ -164,7 +164,7 @@ p {
 .modal-header {
     display: inline;
     padding: 2px 16px;
-    background-color: #5cb85c;
+    background-color: #0cb482;
     color: white;
 }
 
@@ -179,18 +179,19 @@ p {
     margin: 5px;
     border-color: #000;
     border-radius: 3px;
+    border-width: 3px;
 }
 
 input[type=text]:focus {
-    outline-color: #5cb85c;
+    outline-color: #0cb482;
 }
 
 input[type=email]:focus {
-    outline-color: #5cb85c;
+    outline-color:#0cb482;
 }
 
 textarea:focus {
-    outline-color: #5cb85c;
+    outline-color: #0cb482;
 }
 
 @media only screen and (min-width: 769px) {
