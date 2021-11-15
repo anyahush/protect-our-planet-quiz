@@ -50,6 +50,10 @@ const answerButtons = document.getElementById("answer-btns");
 const levelHeading = document.getElementById("level-heading");
 const scoreText = document.getElementById("score-text");
 
+const correctSound = document.getElementById("correct-sound");
+const incorrectSound = document.getElementById("incorrect-sound");
+const levelCompleteSound = document.getElementById("level-complete-sound");
+
 const maxQuestions = 10;
 
 const easy = [{
@@ -1130,9 +1134,11 @@ function selectAnswer(e) {
     score++;
     console.log("1 point");
     selectedButton.style.backgroundColor = 'green';
+    correctSound.play();
 
   } else if (selectedButton.dataset != correct) {
     selectedButton.style.backgroundColor = 'red';
+    incorrectSound.play();
 
   }
 
@@ -1153,6 +1159,7 @@ function endLevel() {
   console.log(levelScores);
   if (levelScores[0] >= 7 && levelScores[1] >= 7 && levelScores[2] >= 7) {
     nextLevelButton.classList.add("hide");
+    levelCompleteSound.play();
     console.log("You've completed the game!");
 
   } else if (score >= 7) {
@@ -1161,6 +1168,7 @@ function endLevel() {
     nextLevelButton.addEventListener("click", nextLevel)
   } else {
     console.log("Try again");
+    incorrectSound.play();
     startButton.classList.remove("hide");
     startButton.innerText = "Try again";
     startButton.addEventListener("click", startGame);
@@ -1170,6 +1178,7 @@ function endLevel() {
 
 
 function nextLevel() {
+  levelCompleteSound.play();
   if (levelScores[0] >= 7 && levelScores[1] >= 7) {
     console.log("level 3");
     nextLevelButton.classList.remove("hide");
