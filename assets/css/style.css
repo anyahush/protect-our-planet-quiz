@@ -37,6 +37,10 @@ h3 {
     margin: 10px;
 }
 
+.quiz-btn:hover {
+    background-color: #0cb482ed;
+}
+
 
 @media only screen and (min-width: 769px) {
     #landing-page-container {
@@ -189,6 +193,10 @@ p {
     border-width: 3px;
 }
 
+textarea {
+    resize: none;
+}
+
 input[type=text]:focus {
     outline-color: #0cb482;
 }
@@ -200,6 +208,8 @@ input[type=email]:focus {
 textarea:focus {
     outline-color: #0cb482;
 }
+
+
 
 @media only screen and (min-width: 769px) {
     .form-input {
