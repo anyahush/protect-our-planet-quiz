@@ -86,22 +86,29 @@ h3 {
 #answer-btns {
     display: flex;
     flex-direction: column;
-    padding: 20px 0;
+    padding: 10px 0;
 
 }
 
-/* .btn {
-    color: red;
+.btn {
     font-size: 110%;
-    border: 1px solid green;
+    border: 5px solid #000;
+    border-radius: 3px;
     padding: 10px 0;
-    margin: 10px;
-} */
+    margin: 10px 0 0;
+}
+
+.btn:hover {
+    border-color: #fff;
+}
+
+
 
 #counter-container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin: 10px;
 
 }
 
