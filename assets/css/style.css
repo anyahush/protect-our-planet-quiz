@@ -14,7 +14,7 @@
 h1 {
     font-family: 'Luckiest Guy';
     text-align: center;
-    padding-top: 25px;
+    padding: 25px;
     font-size: 300%;
     text-shadow: 2px 2px #fff;
 }
@@ -54,12 +54,8 @@ h3 {
     h1 {
         font-size: 500%;
     }
-    #main-container {
-        width: 350px;
-        height: 650px;
-        font-size: 150%;
-    }
 }
+
 
 /* Quiz */
 
@@ -73,10 +69,29 @@ h3 {
     background-color: #b7e6d3;
     opacity: 0.8;
     border-radius: 20px;
-    margin: 40px auto;
+    margin: auto;
     padding: 25px;
 }
 
+@media only screen and (min-width: 1440px) {
+    #main-container {
+        width: 400px;
+        height: 650px;
+        font-size: 150%;
+    }
+}
+
+@media only screen and (min-width: 2560px) {
+    h1 {
+        font-size: 700%;
+    }
+    #main-container {
+        width: 600px;
+        height: 950px;
+        font-size: 225%;
+        margin: 100px auto;
+    }
+}
 
 
 #question-container {
