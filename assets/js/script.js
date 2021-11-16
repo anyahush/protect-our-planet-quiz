@@ -1179,6 +1179,7 @@ function endLevel() {
     nextLevelButton.addEventListener("click", nextLevel)
   } else {
     console.log("Try again");
+    levelScores = [];
     incorrectSound.play();
     quizContainer.classList.add('hide');
     greeting.classList.remove("hide");
