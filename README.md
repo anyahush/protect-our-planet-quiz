@@ -1,8 +1,8 @@
 # Protect Our Planet
-Protect Our Planet is an interactive quiz aimed at 8-12 year old children, with the aim of engaging positively about environmental topics in a fun way. Climate change is something we cannot shy away from and it is important that our children understand how to look after their planet. This quiz aims to introduce topics such as recycling, renewable energy, water efficiency and sustainable transport in an easily digestable and fun way, with the hope of inspiring and empowering young people to take action. 
-&nbsp;
-This project has been developed as the User Centric Frontend Development Milestone 2 Project as part of Code Institute's Software Development Diploma. 
-&nbsp;
+Protect Our Planet is an interactive quiz aimed at 8-12 year old children, with the aim of engaging positively about environmental topics in a fun way. Climate change is increasingly becoming a top priority on the social and political agenda, and it is important that our children understand how to look after the planet. This quiz aims to introduce topics such as recycling, renewable energy, water efficiency and sustainable transport in an easily digestable and fun way, with the hope of inspiring and empowering young people to take action.  
+
+This project has been developed as the User Centric Frontend Development Milestone 2 Project as part of Code Institute's Software Development Diploma.  
+
 Deployed website can be viewed [here](https://github.com/anyahush/protect-our-planet-quiz).
 
 ## Table of Contents
@@ -42,11 +42,69 @@ Parents, Teachers etc. :
 
 ### Opportunity Goal Table
 
+During the initial strategy planning, the opportunities of the site were determined and values were given according to their imporance and viability at this stage.
+
+| Opportunity | Importance | Viability |
+| ----------- | ---------- | --------- |
+| 1. Create an interactive quiz | 5 | 5 |
+| 2. Create multiple levels for players to progress | 5 | 4 |
+| 3. Point tracker| 5 | 4 |
+| 4. Contact form | 4 | 5 |
+| 5. Content on aim of game and rules| 5 | 5 |
+| 6. Completion certificate and learning outcomes summary | 3 | 1 |
+| 7. Educational resources page| 2 | 5 |
+| 8. Option to try a level again | 5 | 4 |
+| 9. Sound effects| 4 | 4 |
+
+
 ## Scope Plane
+
+During the strategy stage features were mapped according to their importance and viability. This process helped to ensure the project didn't extend beyond it's immediate scope.  As a result, each feature has been categorised for current and future releases. The table below highlights which release each feature falls into. 
+
+| Opportunity | Release | 
+| ----------- | ---------- | 
+| Create an interactive quiz | 1|
+| Create multiple levels for players to progress | 1 |
+| Point tracker | 1 |
+| Contact form | 1 |
+| Content on aim of game and rules | 1| 
+| Completion certificate and learning outcomes summary  | 2|
+| Educational resources page| 2 | 
+| Option to try a level again | 1|
+| Sound effects| 1 |. 
 
 ### **Existing Features**
 
+- Mobile- first Responsive Design
+    * This website has been designed with mobile-first responsiveness at the center to ensure that users enjoy an efficient and seamless experience. The Bootstrap framework and CSS styling have been used to ensure this.
+- Landing page
+    * The landing page introduces users to the Protect Our Planet Quiz, Eco Girl and Carbon Kid. The use of superhero graphics and the introductory message quickly indicates that it is a quiz. The use of planet earth as the backdrop and the name Protect Our Planet indicate that it is a quiz focused on planet earth and the environment. 
+- Interactive quiz
+    * Once a player clicks 'Let's Play', it takes the player to the first level. Players select an answer from the multiple choice options. If correct it highlights green and if incorrect it highlights red. 
+    * There are three levels, consisting of 10 questions in each round. Players need to reach seven out of ten to progress to the next level. 
+- Point tracker
+    * During each level players can see how many points they have gained. The point tracker increases for every correct answer a player selects. By having a point tracker, it allows players to see how well they are doing and how many point they need to get through to the next round.
+- Try again button
+    * If a player does not get seven out of ten a 'Try Again' button will show, allowing players to start again. This allows players to practice what they have learned and continue playing the game.
+    * The try again button will take the player back to Level 1.
+- Sound effects
+    * Sound effects have been included when a player gets a correct answer, an incorrect answer, when a player completes a level and when a player completes the game. Sound effects add drama and fun to the game. 
+- How to play modal
+    * The 'How to Play' modal explains to players what the aim of the game is and how to play. This is important in ensuring all players understand what is expected of them in the game.
+- Contact form modal
+    * The contact form allows players and/or parents or teachers to contact the site owner with any feedback or queries. 
+    * One of the site goals is to promote the quiz as an educational resource. The contact form provides a way for potential partnerships or enquiries regarding this.
+
 ### **Features Left to Implement**
+
+- Educational resource page
+    * An educational resource page will provide additional content for parents and teachers to use. It would include further information on the environment and climate change, links to other educational resources and ways to encourage dialogue with children.
+- Completion certificate
+    * Once a player completes all three levels, players will be able to download a certificate highlighting what they achieved in the quiz. In addition it will include a summary of what they learned throughout the quiz. 
+- Try again options
+    * The 'Try again' option will be further developed to allow players to replay the existing level they are on, rather than go back to Level 1 every time. 
+- Superhero graphics
+    * The superhero graphics of Carbon Kid and Eco Girl will be further developed to include images of them throughout the quiz on smaller devices. 
 
 ## Skeleton Plane
 
