@@ -123,9 +123,15 @@ The wireframes for this project were developed using [Balsamiq](https://balsamiq
 
 ### Colour Scheme
 
+During the planning stages, research conducted concluded that colours which are associated with earth, environment and climate change are blue and green. As the primary graphics are predominantly blue, a variety of greens have been used for the additional colours for the backgrounds, highlighting and buttons. The colours are bright and bold to support the story of superheros and contribute to an eye-catching design.
+
 ### Images
 
+The graphics for the site were designed by the developer using [Pixton](https://app.pixton.com). The graphics show two superheros and planet earth. This has been chosen to help build the story of Carbon Kid and Eco Girl and inject excitement and fun into the quiz.
+
 ### Typography
+
+Fonts selected from [Google Fonts](https://fonts.google.com/), Luckiest Guy and Mohave, have been chosen inline with the superhero game vision. Luckiest Guy is used for the Protect Out Planet heading, as it is similar to other superhero branding. Mohave is used for the other headings and quiz content. This font has a more robotic feeling to it, which adds to the overall look of the quiz.
 
 ## Technologies
 
