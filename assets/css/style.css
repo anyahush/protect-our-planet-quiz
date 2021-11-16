@@ -59,6 +59,7 @@ h3 {
 #main-container {
     position: relative;
     font-family: 'Mohave';
+    color: #000;
     font-size: 120%;
     width: 300px;
     height: 600px;
@@ -90,6 +91,12 @@ h3 {
 
 .btn:hover {
     border-color: #fff;
+    color: #fff;
+}
+
+.btn:focus {
+    outline: none;
+    box-shadow: none;
 }
 
 #counter-container {
