@@ -36,8 +36,17 @@ window.onclick = function(event) {
 }
 
 // Contact form
-function alertMessage() {
-  alert("Thank you for your enquiry. We will respond as soon as possible.");
+
+
+// modified from W3 schools tutorial
+function closeModal() {
+  var myModal2 = document.getElementById("myModal2");
+  if (myModal2.style.display === "none") {
+    myModal2.style.display = "block";
+  } else {
+    myModal2.style.display = "none";
+    alert("Thank you for your enquiry. We will respond as soon as possible.");
+  }
 }
 
 // quiz amended from web dev simplified 
