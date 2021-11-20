@@ -139,6 +139,13 @@ The wireframes for this project were developed using [Balsamiq](https://balsamiq
 | [Mobile Quiz Page](assets/images/readme/wireframes/ms2-quiz-mobile.png) | [Tablet Quiz Page](assets/images/readme/wireframes/ms2-quiz-tablet.png) | [Desktop Quiz Page](assets/images/readme/wireframes/ms2-quiz-desktop.png) |
 ### Changes to Wireframes
 
+1. Navbar
+    - The navabar was removed during the initial development stage and a home button used instead. 
+2. Social Media Links
+    - In the initial wireframes social media links were included. During development it was decided that social media links are not appropriate at this stage as the primary age demographic being targeted is 8-12 year old children. 
+3. Logo/ Favicon
+    - During development the  use of a logo or favicon was removed as it was deemed by the developer not to provide value to the user. If the site is developed further in the future, along with a Protect Our Planet brand, a logo may be revisited. 
+
 ## Surface Plane
 
 ### Colour Scheme
