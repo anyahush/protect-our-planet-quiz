@@ -56,6 +56,7 @@ const startButton = document.getElementById("start-btn");
 const nextButton = document.getElementById("next-btn");
 const nextLevelButton = document.getElementById("next-level-btn")
 const playButton = document.getElementById("play-btn");
+const homeButton = document.getElementById("home-btn");
 const contactButton = document.getElementById("contact-btn");
 const quizContainer = document.getElementById("quiz-container");
 const questionContainer = document.getElementById("question-container");
@@ -1070,6 +1071,16 @@ nextButton.addEventListener("click", () => {
   nextQuestion();
 })
 
+homeButton.addEventListener("click", function() {
+  startButton.classList.remove("hide");
+  playButton.classList.remove("hide");
+  contactButton.classList.remove("hide");
+  greeting.classList.remove("hide");
+  quizContainer.classList.add("hide");
+  homeButton.classList.add("hide");
+  nextButton.classList.add("hide");
+})
+
 // Starts game
 function startGame() {
   console.log("Game started");
@@ -1079,12 +1090,14 @@ function startGame() {
   contactButton.classList.add("hide");
   greeting.classList.add("hide");
   quizContainer.classList.remove("hide");
+  homeButton.classList.remove("hide");
   startLevel(easy);
 }
 
+
+
 // Starts a new level
 function startLevel(level) {
-  quizContainer.classList.remove("hide");
   questionContainer.classList.remove("hide");
   answerButtons.classList.remove("hide");
   nextLevelButton.classList.add("hide");
