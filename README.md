@@ -6,6 +6,24 @@ This project has been developed as the User Centric Frontend Development Milesto
 Deployed website can be viewed [here](https://github.com/anyahush/protect-our-planet-quiz).
 
 ## Table of Contents
+---
+1. [Project Goals](https://github.com/anyahush/protect-our-planet-quiz#project-goals)
+2. [UX](https://github.com/anyahush/protect-our-planet-quiz#ux-design)
+3. [Strategy Plane](https://github.com/anyahush/protect-our-planet-quiz#strategy-plane)
+    *[User Stories](https://github.com/anyahush/protect-our-planet-quiz#user-stories)
+4. [Scope Plane](https://github.com/anyahush/protect-our-planet-quiz#scope-plane)
+    *[Existing Features](https://github.com/anyahush/protect-our-planet-quiz#existing-features)
+    *[Features Left to Implement](https://github.com/anyahush/protect-our-planet-quiz#features-left-to-implement)
+5. [Structure Plane](https://github.com/anyahush/protect-our-planet-quiz#structure-plane)
+6. [Skeleton Plane](https://github.com/anyahush/protect-our-planet-quiz#skeleton-plane)
+7. [Surface Plane](https://github.com/anyahush/protect-our-planet-quiz#surface-plane)
+8. [Technologies](https://github.com/anyahush/protect-our-planet-quiz#technologies)
+9. [Testing]()
+10. [Deployment](https://github.com/anyahush/protect-our-planet-quiz#deployment)
+11. [Credits](https://github.com/anyahush/protect-our-planet-quiz#credits)
+12. [Acknowledgements](https://github.com/anyahush/protect-our-planet-quiz#acknowledegments)
+
+---
 
 ## Project Goals
 
@@ -105,6 +123,8 @@ During the strategy stage features were mapped according to their importance and
     * The 'Try again' option will be further developed to allow players to replay the existing level they are on, rather than go back to Level 1 every time. 
 - Superhero graphics
     * The superhero graphics of Carbon Kid and Eco Girl will be further developed to include images of them throughout the quiz on smaller devices. 
+
+## Structure Plane 
 
 ## Skeleton Plane
 
