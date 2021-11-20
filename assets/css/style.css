@@ -106,6 +106,10 @@ h3 {
     margin: 10px;
 }
 
+#home-btn {
+    
+}
+
 @media only screen and (min-width: 768px) {
     h1 {
         font-size: 400%;
