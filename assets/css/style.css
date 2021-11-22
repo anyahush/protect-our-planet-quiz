@@ -22,7 +22,6 @@ h2 {
     font-weight: 900;
     text-transform: uppercase;
     font-size: 250%;
-    padding: 15px 0 0;
 }
 
 h3 {
@@ -67,12 +66,8 @@ h3 {
     background-color: #b7e6d3;
     opacity: 0.8;
     border-radius: 20px;
-    margin: auto;
+    margin: 50px auto;
     padding: 25px;
-}
-
-#question-container {
-    padding: 10px;
 }
 
 #answer-btns {
@@ -113,9 +108,6 @@ h3 {
 @media only screen and (min-width: 768px) {
     h1 {
         font-size: 400%;
-    }
-    #main-container {
-        margin: 50px auto;
     }
 }
 
@@ -249,7 +241,6 @@ footer {
     display: flex;
     color: #000;
     font-size: 80%;
-    position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
