@@ -10,29 +10,29 @@ var spans = document.getElementsByClassName("close");
 
 // When the user clicks the button, open the modal
 for (var i = 0; i < btn.length; i++) {
- btn[i].onclick = function(e) {
+  btn[i].onclick = function (e) {
     e.preventDefault();
     modal = document.querySelector(e.target.getAttribute("href"));
     modal.style.display = "block";
- }
+  }
 }
 
 // When the user clicks on <span> (x), close the modal
 for (var i = 0; i < spans.length; i++) {
- spans[i].onclick = function() {
+  spans[i].onclick = function () {
     for (var index in modals) {
-      if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
+      if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";
     }
- }
+  }
 }
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target.classList.contains('modal')) {
-     for (var index in modals) {
-      if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
-     }
+window.onclick = function (event) {
+  if (event.target.classList.contains('modal')) {
+    for (var index in modals) {
+      if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";
     }
+  }
 }
 
 // Contact form
@@ -1063,6 +1063,7 @@ let currentQuestionIndex;
 let score;
 let levelScores = [];
 let level = [easy, medium, hard];
+let userCanAnswer = true;
 
 
 startButton.addEventListener("click", startGame);
@@ -1071,7 +1072,7 @@ nextButton.addEventListener("click", () => {
   nextQuestion();
 })
 
-homeButton.addEventListener("click", function() {
+homeButton.addEventListener("click", function () {
   startButton.classList.remove("hide");
   playButton.classList.remove("hide");
   contactButton.classList.remove("hide");
@@ -1103,12 +1104,12 @@ function startLevel(level) {
   nextLevelButton.classList.add("hide");
 
   // Changes level heading 
-  if(levelScores[1] > 0) {
+  if (levelScores[1] > 0) {
     levelHeading.innerText = 3;
-  } else if(levelScores[0] > 0) {
+  } else if (levelScores[0] > 0) {
     levelHeading.innerText = 2;
   } else {
-    levelHeading.innerText =1;
+    levelHeading.innerText = 1;
   }
 
   currentQuestionIndex = 0;
@@ -1122,6 +1123,7 @@ function startLevel(level) {
 
 //Shows next question
 function nextQuestion() {
+  userCanAnswer = true;
   resetQuestion();
   showQuestion(shuffledQuestions[currentQuestionIndex]);
 
@@ -1156,20 +1158,24 @@ function resetQuestion() {
 function selectAnswer(e) {
   const selectedButton = e.target;
   const correct = selectedButton.dataset.correct;
-  
 
+  if (userCanAnswer) {
 
-  if (selectedButton.dataset = correct) {
-    score++;
-    console.log("1 point");
-    selectedButton.style.backgroundColor = 'green';
-    correctSound.play();
+    if (selectedButton.dataset = correct) {
+      score++;
+      console.log("1 point");
+      selectedButton.style.backgroundColor = 'green';
+      correctSound.play();
 
-  } else if (selectedButton.dataset != correct) {
-    selectedButton.style.backgroundColor = 'red';
-    incorrectSound.play();
+    } else if (selectedButton.dataset != correct) {
+      selectedButton.style.backgroundColor = 'red';
+      incorrectSound.play();
 
+    }
   }
+
+  userCanAnswer = false;
+
 
   if (currentQuestionIndex === maxQuestions) {
     endLevel();
