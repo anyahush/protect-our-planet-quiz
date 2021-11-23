@@ -48,7 +48,7 @@ First-time visitor:
 * As a first-time visior, I want to be able to understand the purpose of the site easily.
 
 Players:
-* As a player, I want to take part in the quiz, so I can have fun.
+* As a player, I want to take part in an interactive quiz, so I can have fun.
 * As a player, I want to take part in the quiz, so I can learn about the environment.
 * As a player, I want to be able to progress through levels, so I can continue to playing and test what I know.
 * As a player, I want to be able to see how many questions are left.
