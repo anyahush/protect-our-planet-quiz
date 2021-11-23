@@ -18,7 +18,7 @@ Deployed website can be viewed [here](https://github.com/anyahush/protect-our-pl
 6. [Skeleton Plane](https://github.com/anyahush/protect-our-planet-quiz#skeleton-plane)
 7. [Surface Plane](https://github.com/anyahush/protect-our-planet-quiz#surface-plane)
 8. [Technologies](https://github.com/anyahush/protect-our-planet-quiz#technologies)
-9. [Testing]()
+9. [Testing](testing.md)
 10. [Deployment](https://github.com/anyahush/protect-our-planet-quiz#deployment)
 11. [Credits](https://github.com/anyahush/protect-our-planet-quiz#credits)
 12. [Acknowledgements](https://github.com/anyahush/protect-our-planet-quiz#acknowledegments)
