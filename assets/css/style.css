@@ -29,16 +29,26 @@ h3 {
     text-transform: uppercase;
 }
 
+#home-btn, #next-btn {
+    text-transform: uppercase;
+    font-size: 150%;
+    border-radius: 5px;
+    margin: 10px;
+
+}
 .quiz-btn {
     text-transform: uppercase;
     font-size: 150%;
     border-radius: 5px;
     margin: 10px;
+    width: 75%;
 }
 
 .quiz-btn:hover {
     background-color: #0cb482ed;
 }
+
+
 
 @media only screen and (min-width: 769px) {
     #landing-page-container {
@@ -99,10 +109,6 @@ h3 {
     flex-direction: row;
     justify-content: space-around;
     margin: 10px;
-}
-
-#home-btn {
-    
 }
 
 @media only screen and (min-width: 768px) {
