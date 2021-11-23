@@ -1,9 +1,6 @@
 //Modal content from Stack Overflow, full details in README.md
-
 var btn = document.querySelectorAll("button.modal-button");
-
 var modals = document.querySelectorAll('.modal');
-
 var spans = document.getElementsByClassName("close");
 
 for (var i = 0; i < btn.length; i++) {
@@ -45,7 +42,6 @@ function closeModal() {
 // End of W3 schools 
 
 // Quiz amended from Web Dev Simplified, full details in README.md
-
 const easy = [{
   question: 'What is climate change?',
   answers: [{
@@ -1112,7 +1108,6 @@ function nextQuestion() {
   userCanAnswer = true;
   resetQuestion();
   showQuestion(shuffledQuestions[currentQuestionIndex]);
-
   questionCounterText.innerHTML = `${currentQuestionIndex}/${maxQuestions}`
   scoreText.innerHTML = `${score}`;
 }
@@ -1144,14 +1139,13 @@ function resetQuestion() {
 function selectAnswer(e) {
   const selectedButton = e.target;
   const correct = selectedButton.dataset.correct;
-
+  
   if (userCanAnswer) {
     if (selectedButton.dataset = correct) {
       score++;
-      console.log("1 point");
       selectedButton.style.backgroundColor = 'green';
       correctSound.play();
-    } else if (selectedButton.dataset != correct) {
+    } else {
       selectedButton.style.backgroundColor = 'red';
       incorrectSound.play();
     }
@@ -1179,7 +1173,6 @@ function endLevel() {
     greetingInfo.innerText = "You have completed PROTECT OUR PLANET! Remember, give these actions a go!";
     levelCompleteSound.play();
   } else if (score >= 7) {
-    console.log("next level")
     nextLevelButton.classList.remove("hide");
     nextLevelButton.addEventListener("click", nextLevel)
   } else {
@@ -1199,12 +1192,9 @@ function endLevel() {
 function nextLevel() {
   levelCompleteSound.play();
   if (levelScores[0] >= 7 && levelScores[1] >= 7) {
-    console.log("level 3");
     nextLevelButton.classList.remove("hide");
-    nextLevelButton.innerText = "Level 3";
     nextLevelButton.addEventListener("click", startLevel(hard));
   } else if (levelScores[0] >= 7) {
-    console.log("level 2");
     startLevel(medium);
   }
 };
