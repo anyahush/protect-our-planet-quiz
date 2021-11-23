@@ -3,7 +3,7 @@ Protect Our Planet is an interactive quiz aimed at 8-12 year old children, with 
 
 This project has been developed as the User Centric Frontend Development Milestone 2 Project as part of Code Institute's Software Development Diploma.  
 
-Deployed website can be viewed [here](https://github.com/anyahush/protect-our-planet-quiz).
+Deployed website can be viewed [here](https://anyahush.github.io/protect-our-planet-quiz/).
 
 ## Table of Contents
 ---
