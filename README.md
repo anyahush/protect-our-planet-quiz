@@ -44,18 +44,23 @@ Deployed website can be viewed [here](https://anyahush.github.io/protect-our-pla
 
 ### User Stories
 
+First-time visitor:
+* As a first-time visior, I want to be able to understand the purpose of the site easily.
+
 Players:
 * As a player, I want to take part in the quiz, so I can have fun.
 * As a player, I want to take part in the quiz, so I can learn about the environment.
-* As a player, I want to be able to progress through levels, so I can…
+* As a player, I want to be able to progress through levels, so I can continue to playing and test what I know.
+* As a player, I want to be able to see how many questions are left.
 * As a player, I want to see my score, so I can see how well I am doing and where I can improve.
+* As a player, I want to be able to exit the game at any point.
 * As a player, I want to be able to understand the aim of the game and rules easily. 
 * As a player, I want to be able to navigate the site easily.
-* As a player I want to enjoy content on different devices.
+* As a player, I want to enjoy content on different devices.
 * As a player, I want to enjoy a vibrant and eye-catching theme and design.
 
 Parents, Teachers etc. :
-* As a parent/teacher, I want the game to teach children about the environment in a fun and accessible way so they can understand.
+* As a parent/teacher, I want the game to teach children about the environment in a fun and accessible way, so they can understand.
 * As a parent/teacher, I want to be able to contact the site owner, so I can have my queries resolved. 
 
 ### Opportunity Goal Table
