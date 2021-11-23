@@ -66,7 +66,7 @@ h3 {
     background-color: #b7e6d3;
     opacity: 0.8;
     border-radius: 20px;
-    margin: 50px auto;
+    margin: 20px auto;
     padding: 25px;
 }
 
@@ -123,11 +123,31 @@ h3 {
     h1 {
         font-size: 700%;
     }
+    
+    h2 {
+        font-size: 300%;
+        margin: 40px;
+    }
+
     #main-container {
-        width: 600px;
-        height: 950px;
+        width: 800px;
+        height: 1100px;
         font-size: 225%;
         margin: 100px auto;
+    }
+
+    .quiz-btn {
+        font-size: 200%;
+        width: 50%;
+    }
+
+    #counter-container, h3 {
+        font-size: 125%;
+    }
+
+    #answer-btns button {
+        padding: 20px;
+        margin: 20px;
     }
 }
 
