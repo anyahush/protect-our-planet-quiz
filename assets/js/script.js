@@ -1062,9 +1062,12 @@ nextButton.addEventListener("click", () => {
 
 homeButton.addEventListener("click", function () {
   startButton.classList.remove("hide");
+  startButton.innerText = "Let's Play";
   playButton.classList.remove("hide");
   contactButton.classList.remove("hide");
   greeting.classList.remove("hide");
+  greetingHeading.innerText = "Greetings Earthlings!";
+  greetingInfo.innerText = "Carbon Kid and Eco Girl need your help to protect our planet! <br> Your mission is to learn about the environment and how you can help. Good luck!";
   quizContainer.classList.add("hide");
   homeButton.classList.add("hide");
   nextButton.classList.add("hide");
