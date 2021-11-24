@@ -191,6 +191,14 @@ h3 {
     animation-duration: 0.4s
 }
 
+.modal-header {
+    display: inline;
+    padding: 20px 16px 0;
+    background-color: #0cb482;
+    color: white;
+}
+
+.modal-body {padding: 2px 16px;}
 p {
     padding: 10px;
 }
@@ -221,14 +229,6 @@ p {
     cursor: pointer;
 }
 
-.modal-header {
-    display: inline;
-    padding: 2px 16px;
-    background-color: #0cb482;
-    color: white;
-}
-
-.modal-body {padding: 2px 16px;}
 /*end of modal content modified from stack overflow*/
 
 /* contact form */
