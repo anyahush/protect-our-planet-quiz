@@ -1173,7 +1173,7 @@ function endLevel() {
     quizContainer.classList.add('hide');
     greeting.classList.remove("hide");
     greetingHeading.innerText = "Congratulations!";
-    greetingInfo.innerText = "You have completed PROTECT OUR PLANET! Remember, give these actions a go!";
+    greetingInfo.innerText = `You have completed PROTECT OUR PLANET! You got ${score}/${currentQuestionIndex}! You have helped Carbon Kid and Eco Girl on their mission but the quest isn't over yet. Remember to give these actions a go!`;
     levelCompleteSound.play();
   } else if (score >= 7) {
     nextLevelButton.classList.remove("hide");
@@ -1184,7 +1184,7 @@ function endLevel() {
     quizContainer.classList.add('hide');
     greeting.classList.remove("hide");
     greetingHeading.innerText = "Ooops!";
-    greetingInfo.innerText = "You didn't get enough points to get to the next level. Give it a go, and try again!";
+    greetingInfo.innerText = `You got ${score}/${currentQuestionIndex}! Well done but not enough to pass to the next level. Give it a go, and try again!`;
     startButton.classList.remove("hide");
     startButton.innerText = "Try again";
     startButton.addEventListener("click", startGame);
