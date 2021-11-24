@@ -1,4 +1,7 @@
 # Protect Our Planet
+
+![Mock-up of site](assets/readme-images/mock-ups.png)
+
 Protect Our Planet is an interactive quiz aimed at 8-12 year old children, with the aim of engaging positively about environmental topics in a fun way. Climate change is increasingly becoming a top priority on the social and political agenda, and it is important that our children understand how to look after the planet. This quiz aims to introduce topics such as recycling, renewable energy, water efficiency and sustainable transport in an easily digestable and fun way, with the hope of inspiring and empowering young people to take action.  
 
 This project has been developed as the User Centric Frontend Development Milestone 2 Project as part of Code Institute's Software Development Diploma.  
