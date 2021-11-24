@@ -78,6 +78,14 @@
 
 ![Image of contact form modal](assets/readme-images/user-stories/contact-form.png)
 
+## Features
+
+### Contact Form
+
+The contact form has been developed so that users can fill out the form and it is sent to the site owner, using EmailJS. 
+
+![An image of an email received by the site owner, via EmailJS](assets/readme-images/emailjs.png)
+
 ## Responsiveness
  * Chrome Dev tools
 
@@ -91,3 +99,4 @@ To test the performance of the site, Google Chrome Developer Tools were used. Pe
 ![Google Chrome Developer Tools Summary](assets/readme-images/performance-summary.png)
 
 ## Bugs
+
