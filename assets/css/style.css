@@ -21,7 +21,7 @@ h1 {
 h2 {
     font-weight: 900;
     text-transform: uppercase;
-    font-size: 250%;
+    font-size: 200%;
 }
 
 h3 {
@@ -121,7 +121,7 @@ h3 {
     #main-container {
         width: 400px;
         height: 650px;
-        font-size: 150%;
+        font-size: 140%;
     }
 }
 
