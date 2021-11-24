@@ -1080,6 +1080,7 @@ homeButton.addEventListener("click", function () {
   quizContainer.classList.add("hide");
   homeButton.classList.add("hide");
   nextButton.classList.add("hide");
+  soundButton.classList.add("hide");
 })
 
 
