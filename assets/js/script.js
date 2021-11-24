@@ -277,7 +277,7 @@ const easy = [{
       correct: false
     },
     {
-      text: 'A natural source of energy that will not run out',
+      text: 'A natural source of energy that will NOT run out',
       correct: true
     }
   ]
@@ -331,7 +331,7 @@ const easy = [{
   ]
 },
 {
-  question: 'Climate change affects wildlife as well. Arctic ice is melting, which animal lives there?',
+  question: 'Climate change is causing Arctic ice to melt. Which animal lives there?',
   answers: [{
       text: 'Apes',
       correct: false
@@ -493,7 +493,7 @@ const medium = [{
   ]
 },
 {
-  question: 'Saving water is also important. How could you do to save water?',
+  question: 'Saving water is also important. What could you do to save water?',
   answers: [{
       text: 'Leaving the tap running when your brush your teeth',
       correct: false
@@ -557,17 +557,17 @@ const medium = [{
   ]
 },
 {
-  question: 'Where does non-recycled rubbish go?',
+  question: 'Why is cycling or walking NOT a good way to travel?',
   answers: [{
-      text: 'Into space',
+      text: 'It does NOT releases harmful gases',
       correct: false
     },
     {
-      text: 'Landfill or burned',
+      text: 'It releases harmful gases',
       correct: true
     },
     {
-      text: 'A recycling plant',
+      text: 'It helps us keep active',
       correct: false
     },
   ]
@@ -575,7 +575,7 @@ const medium = [{
 {
   question: 'What have a lot governments agreed to do to help stop global warming?',
   answers: [{
-      text: 'Chop down rainforests',
+      text: 'Build more coal stations',
       correct: false
     },
     {
@@ -621,7 +621,7 @@ const medium = [{
   ]
 },
 {
-  question: 'Why is it good to turn off lights and other electronics when not using them?',
+  question: 'Why should we turn lights and other electronics off when not in use?',
   answers: [{
       text: 'Because adults say so',
       correct: false
@@ -669,7 +669,7 @@ const medium = [{
   ]
 },
 {
-  question: 'Which of the following can help reduce the amount of greenhouse gases released into the atmosphere?',
+  question: 'How can we help reduce the amount of greenhouse gases released into the atmosphere?',
   answers: [{
       text: 'Using a net to capture carbon dioxide',
       correct: false
@@ -704,7 +704,7 @@ const medium = [{
 ];
 
 const hard = [{
-  question: 'How much plastic enters the ocean each year? For exmaple: 1 tonne of waste is about the same as a great white shark!',
+  question: 'How much plastic enters the ocean each year? For example: 1 tonne of waste is about the same as a great white shark!',
   answers: [{
       text: '8 tonnes',
       correct: false
@@ -730,7 +730,7 @@ const hard = [{
       correct: false
     },
     {
-      text: 'Trees breathe in carbon dioxide, less trees means more carbon dioxde in the atmosphere',
+      text: 'Trees breathe in CO2, less trees means more CO2 in the atmosphere',
       correct: true
     },
   ]
@@ -978,15 +978,15 @@ const hard = [{
 {
   question: 'Why are electric cars a good way to help reduce global warming?',
   answers: [{
-      text: 'They go so fast, the wind they create helps to keep Earth cool',
+      text: 'They go so fast, the wind keeps the Earth cool',
       correct: false
     },
     {
-      text: 'Electric cars are super cool. They are SO cool, they cool the Earth down',
+      text: 'Because they are expensive',
       correct: false
     },
     {
-      text: "They don't release greenhouse gases into the atmosphere",
+      text: "They don't release greenhouse gases",
       correct: true
     },
   ]
