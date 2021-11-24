@@ -62,6 +62,9 @@
  * Lambda test
 
 ## Performance
- * Chrome Lighthouse
+
+To test the performance of the site, Google Chrome Developer Tools were used. Performance, accessibility, best practice and search engine optimisation (SEO) were tested.
+
+![Google Chrome Developer Tools Summary](assets/readme-images/performance-summary.png)
 
 ## Bugs
