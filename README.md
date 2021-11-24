@@ -13,10 +13,10 @@ Deployed website can be viewed [here](https://anyahush.github.io/protect-our-pla
 1. [Project Goals](https://github.com/anyahush/protect-our-planet-quiz#project-goals)
 2. [UX](https://github.com/anyahush/protect-our-planet-quiz#ux-design)
 3. [Strategy Plane](https://github.com/anyahush/protect-our-planet-quiz#strategy-plane)
-    *[User Stories](https://github.com/anyahush/protect-our-planet-quiz#user-stories)
+    * [User Stories](https://github.com/anyahush/protect-our-planet-quiz#user-stories)
 4. [Scope Plane](https://github.com/anyahush/protect-our-planet-quiz#scope-plane)
-    *[Existing Features](https://github.com/anyahush/protect-our-planet-quiz#existing-features)
-    *[Features Left to Implement](https://github.com/anyahush/protect-our-planet-quiz#features-left-to-implement)
+    * [Existing Features](https://github.com/anyahush/protect-our-planet-quiz#existing-features)
+    * [Features Left to Implement](https://github.com/anyahush/protect-our-planet-quiz#features-left-to-implement)
 5. [Structure Plane](https://github.com/anyahush/protect-our-planet-quiz#structure-plane)
 6. [Skeleton Plane](https://github.com/anyahush/protect-our-planet-quiz#skeleton-plane)
 7. [Surface Plane](https://github.com/anyahush/protect-our-planet-quiz#surface-plane)
@@ -145,6 +145,7 @@ The wireframes for this project were developed using [Balsamiq](https://balsamiq
 | [Mobile How to Play Modal](assets/images/readme/wireframes/ms2-play-modal-mobile.png) | [Tablet How to Play Modal](assets/images/readme/wireframes/ms2-play-modal-tablet.png) | [Desktop How to Play Modal](assets/images/readme/wireframes/ms2-play-modal-desktop.png) |
 | [Mobile Contact Form Modal](assets/images/readme/wireframes/ms2-contact-modal-mobile.png) | [Tablet Contact Form Modal](assets/images/readme/wireframes/ms2-contact-modal-mobile.png) | [Desktop Contact Form Modal](assets/images/readme/wireframes/ms2-contact-modal-desktop.png) |
 | [Mobile Quiz Page](assets/images/readme/wireframes/ms2-quiz-mobile.png) | [Tablet Quiz Page](assets/images/readme/wireframes/ms2-quiz-tablet.png) | [Desktop Quiz Page](assets/images/readme/wireframes/ms2-quiz-desktop.png) |
+
 ### Changes to Wireframes
 
 1. Navbar
@@ -178,6 +179,8 @@ Fonts selected from [Google Fonts](https://fonts.google.com/), Luckiest Guy and 
 ### Frameworks and Libraries
 
 ## Testing
+
+The testing process can be viewed [here](testing.md).
 
 ## Deployment
 
