@@ -29,7 +29,7 @@ h3 {
     text-transform: uppercase;
 }
 
-#home-btn, #next-btn, #sound-btn {
+.quiz-btn {
     text-transform: uppercase;
     font-size: 150%;
     border-radius: 5px;
@@ -37,7 +37,7 @@ h3 {
 
 }
 
-.quiz-btn {
+.home-page-btn {
     text-transform: uppercase;
     font-size: 150%;
     border-radius: 5px;
