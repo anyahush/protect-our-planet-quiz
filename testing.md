@@ -106,6 +106,8 @@ Responsiveness was tested using [Google Chrome Developer Tools](https://develope
 
 ![Responsiveness table](assets/readme-images/testing-images/responsiveness-table.png)
 
+*Note: On iPad/ tablet devices, the site is responsive but there are minor layout adjustments to the quiz container depending on whether the tablet is being held vertically or horizontally.*
+
 ## Browser Compatibility
 
 The site was developed on Google Chrome 95.0.4638.69 and counter checked on Safari 15.1 on macOS Monterey.
