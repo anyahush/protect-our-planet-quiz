@@ -12,9 +12,9 @@
     <link rel="stylesheet" href="assets/font-awesome/webfonts">
     
     <title>Protect Our Planet</title>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js">
     </script>
-    <script type="text/javascript">
+    <script>
         (function () {
             emailjs.init("user_Qg0VvXz59G6JoT6Bdm3rf");
         })();
@@ -74,7 +74,7 @@
 
             <!--Modal content modified from Stack Overflow-->
             <div>
-                <button id="play-btn" class="home-page-btn modal-button" href="#myModal1">How to Play</button>
+                <button id="play-btn" class="home-page-btn modal-button" data-toggle="modal" data-target="#myModal1">How to Play</button>
                 <div id="myModal1" class="modal">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -96,7 +96,7 @@
             </div>
 
             <div>
-                <button id="contact-btn" class="home-page-btn modal-button" href="#myModal2">Contact</button>
+                <button id="contact-btn" class="home-page-btn modal-button" data-toggle="modal" data-target="#myModal2">Contact</button>
                 <div id="myModal2" class="modal">
                     <div class="modal-content">
                         <div class="modal-header">
