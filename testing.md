@@ -101,7 +101,10 @@ The contact form has been developed so that users can fill out the form and it i
 ![An image of an email received by the site owner, via EmailJS](assets/readme-images/testing-images/emailjs.png)
 
 ## Responsiveness
- * Chrome Dev tools
+
+Responsiveness was tested using [Google Chrome Developer Tools](https://developer.chrome.com/docs/devtools/) and Safari Develop options.
+
+![Responsiveness table](assets/readme-images/testing-images/responsiveness-table.png)
 
 ## Browser Compatibility
 
