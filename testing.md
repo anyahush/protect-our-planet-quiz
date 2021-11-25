@@ -90,7 +90,27 @@ The contact form has been developed so that users can fill out the form and it i
  * Chrome Dev tools
 
 ## Browser Compatibility
- * Lambda test
+
+The site was developed on Google Chrome 95.0.4638.69 and counter checked on Safari 15.1 on macOS Monterey.
+
+Using [Lamdatest](https://www.lambdatest.com/) the site's browser compatibility was checked.
+
+A selection of browsers and versions for both Windows and macOS were tested.
+    - Chrome: 95, 91, 90
+    - Firefox: 91, 89, 88
+    - Safari: 15.1, 12
+    - Edge: 94, 91, 90
+
+Below is some examples from the browswer compatibility tests.
+
+![Example of site on Windows-10 Edge 94](assets/readme-images/windows-10-edge-94.png)
+---
+*This is from Windows 10 Edge 94*
+
+![Example of site on Windows-10 Firefox 91](assets/readme-images/windows-10-firefox-91.png)
+---
+*This is from Windows 10 Firefox 91*
+
 
 ## Performance
 
