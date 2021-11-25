@@ -34,6 +34,7 @@ h3 {
     font-size: 150%;
     border-radius: 5px;
     margin: 10px;
+    background-color: #fefefe;
 
 }
 
@@ -43,6 +44,7 @@ h3 {
     border-radius: 5px;
     margin: 10px;
     width: 75%;
+    background-color: #fefefe;
 }
 
 .quiz-btn:hover {
