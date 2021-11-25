@@ -8,7 +8,7 @@ var spans = document.getElementsByClassName("close");
 for (var i = 0; i < btn.length; i++) {
     btn[i].onclick = function(e) {
         e.preventDefault();
-        modal = document.querySelector(e.target.getAttribute("data-target"));
+        let modal = document.querySelector(e.target.getAttribute("data-target"));
         modal.style.display = "block";
     };
 }
