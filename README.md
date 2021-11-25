@@ -226,8 +226,10 @@ The question content was sourced from several educational websites, that are as 
 
 #### Code Content
 - The code for both modals was modified from a [Stack Overflow](https://stackoverflow.com/questions/40645032/creating-multiple-modals-on-a-single-page) response.
+- The code to toggle the contact form modal was modified from [W3 Schools](https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp).
 - The code for the quiz was modified from [Web Dev Simplified](https://github.com/WebDevSimplified/JavaScript-Quiz-App) and his [YouTube Tutorial](https://www.youtube.com/watch?v=riDzcEQbX6k&ab_channel=WebDevSimplified) was used in conjuction.
 - The code to sent up emailjs was modified from [Code Institute Solutions](https://github.com/Code-Institute-Solutions/InteractiveFrontendDevelopment-Resume).
+- The README document was modelled on a [previous repository](https://github.com/anyahush/sunrise-yoga) by the developer.
 
 ### Media
 
