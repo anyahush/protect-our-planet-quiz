@@ -10,12 +10,12 @@
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
     <link rel="stylesheet" href="assets/font-awesome/css/all.css">
     <link rel="stylesheet" href="assets/font-awesome/webfonts">
-    
+
     <title>Protect Our Planet</title>
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js">
     </script>
     <script>
-        (function () {
+        (function() {
             emailjs.init("user_Qg0VvXz59G6JoT6Bdm3rf");
         })();
     </script>
@@ -69,7 +69,7 @@
                 <button id="next-btn" class="quiz-btn hide">Next</button>
                 <button id="sound-btn" class="quiz-btn hide"><i class="fas fa-volume-off"></i></button>
                 <button id="next-level-btn" class="quiz-btn hide">Next level</button>
-                <button id="home-btn" class ="quiz-btn hide"><i class="fas fa-home"></i></button>
+                <button id="home-btn" class="quiz-btn hide"><i class="fas fa-home"></i></button>
             </div>
 
             <!--Modal content modified from Stack Overflow-->
@@ -106,20 +106,18 @@
                         <div class="modal-body">
                             <p>If you have any questions or feedback, please do not hesitate to contact.
                                 <br>
-                                We are happy to help! </p>
+                                We are happy to help!
+                            </p>
 
                             <form id="contact-form" onsubmit="return sendMail(this);">
                                 <div>
-                                    <input type="text" class="form-input" id="name" placeholder="Name" name="name"
-                                        required>
+                                    <input type="text" class="form-input" id="name" placeholder="Name" name="name" required>
                                 </div>
                                 <div>
-                                    <input type="email" class="form-input" id="email" placeholder="Email" name="email"
-                                        required>
+                                    <input type="email" class="form-input" id="email" placeholder="Email" name="email" required>
                                 </div>
                                 <div>
-                                    <textarea name="message" class="form-input" rows="10" id="message"
-                                        placeholder="Message" required></textarea>
+                                    <textarea name="message" class="form-input" rows="10" id="message" placeholder="Message" required></textarea>
                                 </div>
                                 <button onclick="closeModal()" class="quiz-btn" type="submit">Send</button>
                             </form>
@@ -130,7 +128,7 @@
             <!--/End of modified content from Stack Overflow-->
         </div>
         <!--/Main Container-->
-        
+
         <!--Footer-->
         <footer>
             <p id="footer">For educational purposes.</p>

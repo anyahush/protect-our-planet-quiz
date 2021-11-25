@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 //Modal content from Stack Overflow, full details in README.md
 var btn = document.querySelectorAll("button.modal-button");
 var modals = document.querySelectorAll('.modal');
@@ -8,24 +10,24 @@ for (var i = 0; i < btn.length; i++) {
     e.preventDefault();
     modal = document.querySelector(e.target.getAttribute("data-target"));
     modal.style.display = "block";
-  }
+  };
 }
 
 for (var i = 0; i < spans.length; i++) {
   spans[i].onclick = function () {
-    for (var index in modals) {
+    for (let index in modals) {
       if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";
     }
-  }
+  };
 }
 
 window.onclick = function (event) {
   if (event.target.classList.contains('modal')) {
-    for (var index in modals) {
+    for (let index in modals) {
       if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";
     }
   }
-}
+};
 // End of Stack Overflow content
 
 // Contact form
@@ -1027,7 +1029,7 @@ const hard = [{
 
 const startButton = document.getElementById("start-btn");
 const nextButton = document.getElementById("next-btn");
-const nextLevelButton = document.getElementById("next-level-btn")
+const nextLevelButton = document.getElementById("next-level-btn");
 const playButton = document.getElementById("play-btn");
 const soundButton = document.getElementById("sound-btn");
 const homeButton = document.getElementById("home-btn");
@@ -1038,6 +1040,7 @@ const questionCounterText = document.getElementById("question-counter");
 const answerButtons = document.getElementById("answer-btns");
 const levelHeading = document.getElementById("level-heading");
 const scoreText = document.getElementById("score-text");
+const greeting = document.getElementById("greeting");
 const greetingHeading = document.getElementById('greeting-heading');
 const greetingInfo = document.getElementById("greeting-info");
 
@@ -1054,14 +1057,13 @@ let score;
 let levelScores = [];
 let level = [easy, medium, hard];
 let userCanAnswer = true;
-let sound = [correctSound, incorrectSound, levelCompleteSound];
 let isPlaying = true;
 
 startButton.addEventListener("click", startGame);
 nextButton.addEventListener("click", () => {
   currentQuestionIndex++;
   nextQuestion();
-})
+});
 
 soundButton.addEventListener("click", () => {
   isPlaying = !isPlaying;
@@ -1081,7 +1083,7 @@ homeButton.addEventListener("click", function () {
   homeButton.classList.add("hide");
   nextButton.classList.add("hide");
   soundButton.classList.add("hide");
-})
+});
 
 
 // Starts game
@@ -1113,7 +1115,7 @@ function startLevel(level) {
 
   currentQuestionIndex = 0;
   score = 0;
-  shuffledQuestions = level.sort(() => Math.random() - .5);
+  shuffledQuestions = level.sort(() => Math.random() - '.5');
 
   nextQuestion();
 }
@@ -1123,7 +1125,7 @@ function nextQuestion() {
   userCanAnswer = true;
   resetQuestion();
   showQuestion(shuffledQuestions[currentQuestionIndex]);
-  questionCounterText.innerHTML = `${currentQuestionIndex}/${maxQuestions}`
+  questionCounterText.innerHTML = `${currentQuestionIndex}/${maxQuestions}`;
   scoreText.innerHTML = `${score}`;
 }
 
@@ -1139,7 +1141,7 @@ function showQuestion(level) {
     }
     button.addEventListener("click", selectAnswer);
     answerButtons.appendChild(button);
-  })
+  });
 }
 
 // Resets question
@@ -1156,7 +1158,7 @@ function selectAnswer(e) {
   const correct = selectedButton.dataset.correct;
 
   if (userCanAnswer) {
-    if (selectedButton.dataset = correct) {
+    if (selectedButton.dataset == correct) {
       score++;
       selectedButton.style.backgroundColor = 'green';
       if (isPlaying) {
@@ -1174,7 +1176,7 @@ function selectAnswer(e) {
     if (currentQuestionIndex === maxQuestions) {
       endLevel();
     } else {
-      nextButton.classList.remove("hide")
+      nextButton.classList.remove("hide");
     }
   }
 
@@ -1195,7 +1197,7 @@ function selectAnswer(e) {
       }
     } else if (score >= 7) {
       nextLevelButton.classList.remove("hide");
-      nextLevelButton.addEventListener("click", nextLevel)
+      nextLevelButton.addEventListener("click", nextLevel);
     } else {
       levelScores = [];
       if (isPlaying) {
@@ -1209,7 +1211,7 @@ function selectAnswer(e) {
       startButton.innerText = "Try again";
       startButton.addEventListener("click", startGame);
     }
-  };
+  }
 
   // Generates next level
   function nextLevel() {
@@ -1220,7 +1222,7 @@ function selectAnswer(e) {
     } else if (levelScores[0] >= 7) {
       startLevel(medium);
     }
-  };
-};
+  }
+}
 
 // End of content from Web Dev Simplified
