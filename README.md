@@ -178,6 +178,19 @@ Fonts selected from [Google Fonts](https://fonts.google.com/), Luckiest Guy and 
 
 ### Frameworks and Libraries
 
+- [Am I Responsive?](http://ami.responsivedesign.is/) was used to create the mock ups.
+- [Balsamiq](https://balsamiq.com/) was used to create the wireframes.
+- [Bootstrap 5.1.3](https://getbootstrap.com/) was used to contribute to responsiveness and styling of the site.
+- [Font Awesome](https://fontawesome.com/) was used for button icons.
+- Git was used for version control ad to push code to GitHub.
+- [GitHub](https://github.com/) was used to store the repository.
+- [GitPod](https://www.gitpod.io/) was used as the IDE to develop the project.
+- [Google Fonts](https://fonts.google.com/) were used to select fonts for the site.
+- [Lambdatest](https://www.lambdatest.com/) was used to check browser compatibility.
+- [Pixton](https://www.pixton.com/) was used to design the graphics for the site.
+
+
+
 ## Testing
 
 The testing process can be viewed [here](testing.md).
@@ -208,7 +221,7 @@ A clone of the repository can be made, which will create a local copy on your ow
 
 - Login to GitHub and locate the repository as before.
 - Click the button called "Code".
-- Under HTTPS copy the link provided, in this case (https://github.com/anyahush/sunrise-yoga.git).
+- Under HTTPS copy the link provided, in this case (https://github.com/anyahush/protect-our-planet-quiz.git).
 - Go to Gitpod or whichever IDE you are using and open the Terminal.
 - Change the current working directory to the location where you want the cloned directory to be made.
 - Type 'git clone' followed by the url you copied in step 3.
