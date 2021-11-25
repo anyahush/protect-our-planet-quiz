@@ -84,7 +84,7 @@
 
 The contact form has been developed so that users can fill out the form and it is sent to the site owner, using EmailJS. 
 
-![An image of an email received by the site owner, via EmailJS](assets/readme-images/emailjs.png)
+![An image of an email received by the site owner, via EmailJS](assets/readme-images/testing-images/emailjs.png)
 
 ## Responsiveness
  * Chrome Dev tools
@@ -103,11 +103,11 @@ A selection of browsers and versions for both Windows and macOS were tested.
 
 Below is some examples from the browswer compatibility tests.
 
-![Example of site on Windows-10 Edge 94](assets/readme-images/windows-10-edge-94.png)
+![Example of site on Windows-10 Edge 94](assets/readme-images/testing-images/windows-10-edge-94.png)
 ---
 *This is from Windows 10 Edge 94*
 
-![Example of site on Windows-10 Firefox 91](assets/readme-images/windows-10-firefox-91.png)
+![Example of site on Windows-10 Firefox 91](assets/readme-images/testing-images/windows-10-firefox-91.png)
 ---
 *This is from Windows 10 Firefox 91*
 
@@ -116,7 +116,7 @@ Below is some examples from the browswer compatibility tests.
 
 To test the performance of the site, Google Chrome Developer Tools were used. Performance, accessibility, best practice and search engine optimisation (SEO) were tested.
 
-![Google Chrome Developer Tools Summary](assets/readme-images/performance-summary.png)
+![Google Chrome Developer Tools Summary](assets/readme-images/testing-images/performance-summary.png)
 
 ## Bugs
 
