@@ -1158,7 +1158,7 @@ function selectAnswer(e) {
     const correct = selectedButton.dataset.correct;
 
     if (userCanAnswer) {
-        if (selectedButton.dataset == correct) {
+        if (selectedButton.dataset = correct) {
             score++;
             selectedButton.style.backgroundColor = 'green';
             if (isPlaying) {
