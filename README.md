@@ -154,6 +154,8 @@ The wireframes for this project were developed using [Balsamiq](https://balsamiq
     - In the initial wireframes social media links were included. During development it was decided that social media links are not appropriate at this stage as the primary age demographic being targeted is 8-12 year old children. 
 3. Logo/ Favicon
     - During development the  use of a logo or favicon was removed as it was deemed by the developer not to provide value to the user. If the site is developed further in the future, along with a Protect Our Planet brand, a logo may be revisited. 
+4. Sound Button
+    - During review process it was suggested to add a button that allows players to change volume or turn sound off. A button has been added to turn the sound off. Further development in the future will ensure the button changes display to show whether the sound is on or off. 
 
 ## Surface Plane
 
