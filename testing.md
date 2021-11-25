@@ -1,9 +1,23 @@
 # Testing
 
 ## Code Validation
- * HTML
- * CSS
- * JS
+
+ * The [W3C Markup Validation Service](https://validator.w3.org/) was used to validate all HTML files. Initially there were only a few errors, once corrected the validation showed no errors found. The results are shown below.
+
+ ![Initial W3C HTML Validation result](assets/readme-images/testing-images/w3c-initial-html-validation.png)
+ 
+ ![Final W3C HTML Validation result](assets/readme-images/testing-images/w3c-final-html-validation.png)
+
+ * The [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) was used to validate the CSS stylesheet. Initially no errors were found.
+
+ ![W3C CSS Validation result](assets/readme-images/testing-images/w3c-css-validation.png)
+
+
+ * The [JSHint](https://jshint.com/) tool was used to check for errors in all JavaScript files. Initially there were errors regarding missing semi-colons and some variables not defined in the correct scope. With these corrected and specifying ECMAScript 6, these errors have been primarily fixed. 
+
+ ![JSHint validation result](assets/readme-images/testing-images/jshint-result.png)
+---
+ ![JSHint validation result for sendemail.js](assets/readme-images/testing-images/jshint-result-sendemailjs.png)
 
 ## User Stories
 
