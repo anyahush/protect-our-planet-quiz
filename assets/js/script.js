@@ -44,6 +44,7 @@ function closeModal() {
 // End of W3 schools 
 
 // Quiz amended from Web Dev Simplified, full details in README.md
+
 const startButton = document.getElementById("start-btn");
 const nextButton = document.getElementById("next-btn");
 const nextLevelButton = document.getElementById("next-level-btn");
@@ -72,9 +73,17 @@ let currentQuestion;
 let currentQuestionIndex;
 let score;
 let levelScores = [];
+let easy= [];
 let level = [easy, medium, hard];
 let userCanAnswer = true;
 let isPlaying = true;
+
+fetch("assets/js/level-one-questions.json")
+    .then(res => res.json())
+    .then(data => {
+        easy = data;
+    })
+
 
 startButton.addEventListener("click", startGame);
 nextButton.addEventListener("click", () => {
