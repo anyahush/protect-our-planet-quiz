@@ -73,17 +73,39 @@ let currentQuestion;
 let currentQuestionIndex;
 let score;
 let levelScores = [];
-let easy= [];
+let easy = [];
+let medium = [];
+let hard = [];
 let level = [easy, medium, hard];
 let userCanAnswer = true;
 let isPlaying = true;
 
-fetch("assets/js/level-one-questions.json")
+fetch("assets/js/easy-questions.json")
     .then(res => res.json())
     .then(data => {
         easy = data;
     })
+    .catch((error) => {
+        alert("Could not load questions!");
+    })
 
+fetch("assets/js/medium-questions.json")
+    .then(res => res.json())
+    .then(data => {
+        medium = data;
+    })
+    .catch((error) => {
+        alert("Could not load questions!");
+    })
+
+fetch("assets/js/hard-questions.json")
+    .then(res => res.json())
+    .then(data => {
+        hard = data;
+    })
+    .catch((error) => {
+        alert("Could not load questions!");
+    })
 
 startButton.addEventListener("click", startGame);
 nextButton.addEventListener("click", () => {
@@ -94,7 +116,6 @@ nextButton.addEventListener("click", () => {
 soundButton.addEventListener("click", () => {
     isPlaying = !isPlaying;
     console.log(isPlaying);
-
 });
 
 homeButton.addEventListener("click", function() {
