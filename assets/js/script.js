@@ -80,41 +80,16 @@ let level = [easy, medium, hard];
 let userCanAnswer = true;
 let isPlaying = true;
 
-// fetch("assets/js/easy-questions.json")
-// //     .then(res => res.json())
-//     .then(data => {
-//         easy = data;
-//     })
-//     .catch((error) => {
-//         alert("Could not load questions!");
-//     })
-
-// fetch("assets/js/medium-questions.json")
-//     .then(res => res.json())
-//     .then(data => {
-//         medium = data;
-//     })
-//     .catch((error) => {
-//         alert("Could not load questions!");
-//     })
-
-// fetch("assets/js/hard-questions.json")
-//     .then(res => res.json())
-//     .then(data => {
-//         hard = data;
-//     })
-//     .catch((error) => {
-//         alert("Could not load questions!");
-//     })
-
-fetch("assets/js/questions.json")
-    .then(res => res.json())
-    .then(data => {
-        questions = data;
-    })
-    .catch((error) => {
-        alert("Could not load questions!");
-    })
+(async function() {
+    const res = await fetch("/assets/js/questions.json");
+    const questions = await res.json();
+    easy = questions.easy;
+    medium = questions.medium;
+    hard = questions.hard;
+    console.log(easy);
+    console.log(medium);
+    console.log(hard);
+})();
 
 startButton.addEventListener("click", startGame);
 nextButton.addEventListener("click", () => {
