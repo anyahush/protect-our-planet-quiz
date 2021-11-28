@@ -187,9 +187,11 @@ function resetQuestion() {
 function selectAnswer(e) {
     const selectedButton = e.target;
     const correct = selectedButton.dataset.correct;
-
+    console.log(correct);
+    console.log(selectedButton.dataset);
+    console.log(userCanAnswer);
     if (userCanAnswer) {
-        if (selectedButton.dataset === true) {
+        if (correct) {
             score++;
             selectedButton.style.backgroundColor = 'green';
             if (isPlaying) {
