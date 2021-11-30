@@ -92,6 +92,15 @@
 
 ![Image of contact form modal](assets/readme-images/user-stories/contact-form.png)
 
+14. *As a player, I want to enjoy sound effects whilst I am playing.*
+    * Sounds effects have been included to play when a player selects a correct or incorrect answer, at the end of a level and the end of the game.
+
+15. *As a player, I want to be able to turn off sound effects if I wish.*
+    * A sound button has been included to allow players to turn the sound off at any point during the game. 
+    * Currently the display of the button does not change, showing whether the sound is on or off. This has been highlighted in features left to implement.
+
+![Image of sound button](assets/readme-images/user-stories/sound-button.png)
+
 ## Features
 
 ### Contact Form

@@ -61,6 +61,8 @@ Players:
 * As a player, I want to be able to navigate the site easily.
 * As a player, I want to enjoy content on different devices.
 * As a player, I want to enjoy a vibrant and eye-catching theme and design.
+* As a player, I want to enjoy sound effects whilst I am playing.
+* As a player, I want to be able to turn off sound effects if I wish.
 
 Parents, Teachers etc. :
 * As a parent/teacher, I want the game to teach children about the environment in a fun and accessible way, so they can understand.
