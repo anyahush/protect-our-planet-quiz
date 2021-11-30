@@ -147,10 +147,10 @@ The wireframes for this project were developed using [Balsamiq](https://balsamiq
 
 | Mobile | Tablet| Desktop|
 --------------------|--------------------|--------------------------|
-| [Mobile Home Page](assets/images/readme/wireframes/ms2-home-mobile.png) | [Tablet Home Page](assets/images/readme/wireframes/ms2-home-tablet.png) | [Desktop Home Page](assets/images/readme/wireframes/ms2-home-desktop.png) |
-| [Mobile How to Play Modal](assets/images/readme/wireframes/ms2-play-modal-mobile.png) | [Tablet How to Play Modal](assets/images/readme/wireframes/ms2-play-modal-tablet.png) | [Desktop How to Play Modal](assets/images/readme/wireframes/ms2-play-modal-desktop.png) |
-| [Mobile Contact Form Modal](assets/images/readme/wireframes/ms2-contact-modal-mobile.png) | [Tablet Contact Form Modal](assets/images/readme/wireframes/ms2-contact-modal-mobile.png) | [Desktop Contact Form Modal](assets/images/readme/wireframes/ms2-contact-modal-desktop.png) |
-| [Mobile Quiz Page](assets/images/readme/wireframes/ms2-quiz-mobile.png) | [Tablet Quiz Page](assets/images/readme/wireframes/ms2-quiz-tablet.png) | [Desktop Quiz Page](assets/images/readme/wireframes/ms2-quiz-desktop.png) |
+| [Mobile Home Page](assets/readme-images/wireframes/ms2-home-mobile.png) | [Tablet Home Page](assets/readme-images/wireframes/ms2-home-tablet.png) | [Desktop Home Page](assets/readme-images/wireframes/ms2-home-desktop.png) |
+| [Mobile How to Play Modal](assets/readme-images/wireframes/ms2-play-modal-mobile.png) | [Tablet How to Play Modal](assets/readme-images/wireframes/ms2-play-modal-tablet.png) | [Desktop How to Play Modal](assets/readme-images/wireframes/ms2-play-modal-desktop.png) |
+| [Mobile Contact Form Modal](assets/readme-images/wireframes/ms2-contact-modal-mobile.png) | [Tablet Contact Form Modal](assets/readme-images/wireframes/ms2-contact-modal-mobile.png) | [Desktop Contact Form Modal](assets/readme-images/wireframes/ms2-contact-modal-desktop.png) |
+| [Mobile Quiz Page](assets/readme-images/wireframes/ms2-quiz-mobile.png) | [Tablet Quiz Page](assets/readme-images/wireframes/ms2-quiz-tablet.png) | [Desktop Quiz Page](assets/readme-images/wireframes/ms2-quiz-desktop.png) |
 
 ### Changes to Wireframes
 
