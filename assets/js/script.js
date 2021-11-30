@@ -109,7 +109,7 @@ homeButton.addEventListener("click", function() {
     contactButton.classList.remove("hide");
     greeting.classList.remove("hide");
     greetingHeading.innerText = "Greetings Earthlings!";
-    greetingInfo.innerText = "Carbon Kid and Eco Girl need your help to protect our planet! <br> Your mission is to learn about the environment and how you can help. Good luck!";
+    greetingInfo.innerText = "Carbon Kid and Eco Girl need your help to protect our planet! Your mission is to learn about the environment and how you can help. Good luck!";
     quizContainer.classList.add("hide");
     homeButton.classList.add("hide");
     nextButton.classList.add("hide");
@@ -145,7 +145,7 @@ function startLevel(level) {
         levelHeading.innerText = 1;
     }
 
-    currentQuestionIndex = 0;
+    currentQuestionIndex = 1;
     score = 0;
     shuffledQuestions = level.sort(() => Math.random() - '.5');
 
@@ -228,7 +228,7 @@ function selectAnswer(e) {
                 quizContainer.classList.add('hide');
                 greeting.classList.remove("hide");
                 greetingHeading.innerText = "Congratulations!";
-                greetingInfo.innerText = `You have completed PROTECT OUR PLANET! You got ${score}/${currentQuestionIndex}! You have helped Carbon Kid and Eco Girl on their mission but the quest isn't over yet. Remember to give these actions a go!`;
+                greetingInfo.innerText = `You have completed PROTECT OUR PLANET! You got ${score}/${maxQuestions}! You have helped Carbon Kid and Eco Girl on their mission but the quest isn't over yet. Remember to give these actions a go!`;
                 if (isPlaying) {
                     levelCompleteSound.play();
                 }
