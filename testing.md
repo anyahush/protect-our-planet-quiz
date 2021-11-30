@@ -124,10 +124,10 @@ The site was developed on Google Chrome 95.0.4638.69 and counter checked on Safa
 Using [Lamdatest](https://www.lambdatest.com/) the site's browser compatibility was checked.
 
 A selection of browsers and versions for both Windows and macOS were tested.
-    - Chrome: 95, 91, 90
-    - Firefox: 91, 89, 88
-    - Safari: 15.1, 12
-    - Edge: 94, 91, 90
+- Chrome: 95, 91, 90
+- Firefox: 91, 89, 88
+- Safari: 15.1, 12
+- Edge: 94, 91, 90
 
 Below is some examples from the browswer compatibility tests.
 
@@ -148,3 +148,21 @@ To test the performance of the site, Google Chrome Developer Tools were used. Pe
 
 ## Bugs
 
+### Resolved
+1. Initial HTML validation through W3C HTML Validation highlighted several bugs. There are as shown below.
+    - The type attribute was removed from the JavaScript resources.
+    - The href attribute was removed from the modal buttons. Data-target and data-toggle were applied instead. 
+
+![W3C HTML Initial Validation Result](assets/readme-images/testing-images/w3c-initial-html-validation.png)
+
+2. A favicon console error was displayed.
+    - A link was added to the head of the HTML file to prevent a 404 favicon error.  
+![The link to prevent a favicon console error](assets/readme-images/testing-images/favicon-error-link.png)
+
+3. Moving questions arrays to JSON file. 
+    - Initially using the fetch method, the questions were not displaying correctly. It was learnt that the different levels of questions needed to be able to be used seperately and not as a single array. With exploration and support, the async await function was applied. This has ensured the questions are displayed correctly and the relevant data accessed.
+
+### Existing
+
+1. Limitations with Graphics
+    - The graphics were designed using Pixton, a platform that has populated styles and options. This site did not offer the option to reduce the sizes of the avatars, and as a result means that they are not displayed on smaller screens. 
