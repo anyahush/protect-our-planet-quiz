@@ -165,7 +165,7 @@
               "correct": true
             },
             {
-              "text": "It isn\"t a problem",
+              "text": "It isn't a problem",
               "correct": false
             }
           ]
@@ -208,7 +208,7 @@
           "question": "Instead of buying disposable plastic bottles, what is a solution?",
           "answers": [
             {
-              "text": "Don\"t drink water out of bottles",
+              "text": "Don't drink water out of bottles",
               "correct": false
             },
             {
@@ -284,7 +284,7 @@
               "correct": false
             },
             {
-              "text": "Cars don\"t have any impact on the environment",
+              "text": "Cars don't have any impact on the environment",
               "correct": false
             }
           ]
@@ -547,18 +547,18 @@
           ]
         },
         {
-          "question": "Why is cycling or walking NOT a good way to travel?",
+          "question": "Why is cycling or walking a good way to travel?",
           "answers": [
             {
               "text": "It does NOT releases harmful gases",
-              "correct": false
-            },
-            {
-              "text": "It releases harmful gases",
               "correct": true
             },
             {
-              "text": "It helps us keep active",
+              "text": "It's bad for you",
+              "correct": false
+            },
+            {
+              "text": "It uses petrol or diesel",
               "correct": false
             }
           ]
@@ -598,14 +598,14 @@
           ]
         },
         {
-          "question": "Trees can help remove carbon dioxide (a greenhouse gas) from the atmosphere by:",
+          "question": "Trees can help remove CO2 (a greenhouse gas) from the atmosphere by:",
           "answers": [
             {
               "text": "Intimidating it with their height",
               "correct": false
             },
             {
-              "text": "Breathing it in and breathing out oxygen",
+              "text": "Breathing it in",
               "correct": true
             },
             {
@@ -677,7 +677,7 @@
               "correct": false
             },
             {
-              "text": "Carpooling (sharing car journeys with other people)",
+              "text": "Car sharing",
               "correct": true
             }
           ]
@@ -719,7 +719,7 @@
           ]
         },
         {
-          "question": "Deforestation is the clearing of forest for farming and houses. Why is deforestation a cause of climate change?",
+          "question": "Deforestation is the clearing of forest for farming and houses. Why is it add to climate change?",
           "answers": [
             {
               "text": "Deforestation does not cause climate change",
@@ -770,7 +770,7 @@
           ]
         },
         {
-          "question": "Saving electricity is important, as not everyone in the world has access to it. What can you do to save electricity in your house?",
+          "question": "What can you do to save electricity in your house?",
           "answers": [
             {
               "text": "Turn appliances off standby, like the T.V",
@@ -957,7 +957,7 @@
           ]
         },
         {
-          "question": "Eating sustainably is something we can do to take pressure off our natural resources. How could you do that?",
+          "question": "What can you eat to help the environment?",
           "answers": [
             {
               "text": "Eat some vegan and vegetarian meals",
@@ -968,7 +968,7 @@
               "correct": false
             },
             {
-              "text": "The type of food you eat does not impact the planet",
+              "text": "The type of food you eat doesn't impact the planet",
               "correct": false
             }
           ]
@@ -1008,7 +1008,7 @@
           ]
         },
         {
-          "question": "Ozone, Nitrous Oxide and Chloroflurocarbons are some of the greenhouse gases. Which other ones are greenhouse gases?",
+          "question": "Ozone, Nitrous Oxide and Chloroflurocarbons are some of the greenhouse gases. Which other ones are?",
           "answers": [
             {
               "text": "Water vapor, carbon dioxide and methane",
@@ -1025,14 +1025,14 @@
           ]
         },
         {
-          "question": "Having shorter showers and not leaving the tap running when you brush your teeth is a good way to save _______",
+          "question": "Having shorter showers is a good way to save _______",
           "answers": [
             {
               "text": "Electricity",
               "correct": false
             },
             {
-              "text": "Water",
+              "text": "Water and energy",
               "correct": true
             },
             {
