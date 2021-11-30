@@ -126,6 +126,7 @@ function startGame() {
     quizContainer.classList.remove("hide");
     homeButton.classList.remove("hide");
     soundButton.classList.remove("hide");
+    levelScores.splice(0, levelScores.length);
     startLevel(easy);
 }
 
