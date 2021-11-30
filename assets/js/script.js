@@ -221,14 +221,19 @@ function selectAnswer(e) {
 
         levelScores.push(score);
         if (levelScores[0] >= 7 && levelScores[1] >= 7 && levelScores[2] >= 7) {
-            nextLevelButton.classList.add("hide");
-            quizContainer.classList.add('hide');
-            greeting.classList.remove("hide");
-            greetingHeading.innerText = "Congratulations!";
-            greetingInfo.innerText = `You have completed PROTECT OUR PLANET! You got ${score}/${currentQuestionIndex}! You have helped Carbon Kid and Eco Girl on their mission but the quest isn't over yet. Remember to give these actions a go!`;
-            if (isPlaying) {
-                levelCompleteSound.play();
-            }
+            nextLevelButton.classList.remove("hide");
+            nextLevelButton.innerText = "Level Complete";
+            nextLevelButton.addEventListener("click", () => {
+                score = levelScores[2];
+                quizContainer.classList.add('hide');
+                greeting.classList.remove("hide");
+                greetingHeading.innerText = "Congratulations!";
+                greetingInfo.innerText = `You have completed PROTECT OUR PLANET! You got ${score}/${currentQuestionIndex}! You have helped Carbon Kid and Eco Girl on their mission but the quest isn't over yet. Remember to give these actions a go!`;
+                if (isPlaying) {
+                    levelCompleteSound.play();
+                }
+            });
+          
         } else if (score >= 7) {
             nextLevelButton.classList.remove("hide");
             nextLevelButton.addEventListener("click", nextLevel);
@@ -249,7 +254,9 @@ function selectAnswer(e) {
 
     // Generates next level
     function nextLevel() {
-        levelCompleteSound.play();
+        if(isPlaying) {
+            levelCompleteSound.play();
+        }
         if (levelScores[0] >= 7 && levelScores[1] >= 7) {
             nextLevelButton.classList.remove("hide");
             nextLevelButton.addEventListener("click", startLevel(hard));
