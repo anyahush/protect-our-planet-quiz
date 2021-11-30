@@ -195,6 +195,7 @@ Fonts selected from [Google Fonts](https://fonts.google.com/), Luckiest Guy and 
 - [GitPod](https://www.gitpod.io/) was used as the IDE to develop the project.
 - [Google Fonts](https://fonts.google.com/) were used to select fonts for the site.
 - [Lambdatest](https://www.lambdatest.com/) was used to check browser compatibility.
+- [Online JavaScript Beautifier](https://beautifier.io/) was used to standardise HTML, CSS and JavaScript files.
 - [Pixton](https://www.pixton.com/) was used to design the graphics for the site.
 
 
@@ -265,3 +266,9 @@ The mp3 files were downloaded from [Orange Free Sounds](https://orangefreesounds
 
 
 ## Acknowledegments
+
+- Code Institute and their tutors 
+- The mini Feb 2021 team on Slack
+- My mentor Precious Ijege
+- The Slack community
+- Friends and family
