@@ -132,9 +132,13 @@ During the strategy stage features were mapped according to their importance and
 - Try again options
     * The 'Try again' option will be further developed to allow players to replay the existing level they are on, rather than go back to Level 1 every time. 
 - Superhero graphics
-    * The superhero graphics of Carbon Kid and Eco Girl will be further developed to include images of them throughout the quiz on smaller devices. 
+    * The superhero graphics of Carbon Kid and Eco Girl will be further developed to include images of them throughout the quiz on smaller devices.
+- Display Changing Sound Button
+    * A sound button that changes display according to whether the sound has been clicked on or off will be developed. Currently the sound button does not indicate to the user if the sound is on or off. 
 
 ## Structure Plane 
+
+The structure of this site has been kept simple to ensure a good, efficient and enjoyable user experience. The site is on one page, with the content of one container changing to display the questions and answers. Throughout the game, users can press home to return to the main menu and exit the game at any point. 
 
 ## Skeleton Plane
 
