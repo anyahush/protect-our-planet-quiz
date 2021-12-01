@@ -51,8 +51,6 @@ h3 {
     background-color: #0cb482ed;
 }
 
-
-
 @media only screen and (min-width: 769px) {
     #landing-page-container {
         background: url('../images/landing-page-tablet.png');
@@ -114,10 +112,23 @@ h3 {
     margin: 10px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 768px) {
     h1 {
         font-size: 400%;
     }
+    h2 {
+        font-size: 220%;
+    }
+    #main-container {
+        margin: 90px auto;
+        height: 650px;
+        width: 400px;
+        font-size: 130%;
+    }
+    #answer-btns button {
+        margin: 10px;
+    }
+
 }
 
 @media only screen and (min-width: 1440px) {
