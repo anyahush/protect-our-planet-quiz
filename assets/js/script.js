@@ -69,9 +69,13 @@ let userCanAnswer = true;
 let isPlaying = true;
 
 
-fetch("/assets/js/questions.json")
+fetch("assets/js/questions.json")
     .then(response => response.json())
-    .then(data => console.log(data))
+    .then(data => {
+        easy = data.easy;
+        medium = data.medium;
+        hard = data.hard;
+    })
     .catch(error => console.log(error));
         // easy = questions.easy;
         // medium = questions.medium;
