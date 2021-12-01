@@ -31,19 +31,6 @@ window.onclick = function(event) {
 };
 // End of Stack Overflow content
 
-// Contact form
-// Modified from W3 schools tutorial, full details in README.md
-function closeModal() {
-    var myModal2 = document.getElementById("myModal2");
-    if (myModal2.style.display === "none") {
-        myModal2.style.display = "block";
-    } else {
-        myModal2.style.display = "none";
-        alert("Thank you for your enquiry. We will respond as soon as possible.");
-    }
-}
-// End of W3 schools 
-
 // Quiz amended from Web Dev Simplified, full details in README.md
 
 const startButton = document.getElementById("start-btn");

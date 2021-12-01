@@ -3,17 +3,37 @@ const contactForm = document.getElementById("contact-form");
 const myModal2 = document.getElementById("myModal2");
 const sendButton = document.getElementById("send-btn");
 
+contactForm.submit(function(e) {
+    e.preventDefault();
+    validateForm(this);
+});
 
-contactForm.addEventListener('submit', sendForm);
-sendButton.addEventListener("click", () => {
-    myModal2.style.display = "none";
-    alert("Thank you for your enquiry. We will respond as soon as possible.");
-})
+function validateForm(contactForm) {
+    let name = document.getElementById("name").value;
+    let emailAddress = document.getElementById("email-address").value;
+    let message = document.getElementById("message").value;
+    let errorMessage = document.getElementsByClassName("error-message");
 
-function sendForm(event) {
-    event.preventDefault();
+    var text;
+    if(name.length < 5){
+        text = "Please enter valid name";
+        errorMessage.innerHTML = text;
+        return false;
+    }
+    if(emailAddress.indexOf("@") == -1 || email.length < 6) {
+        text = "Please enter valid email address";
+        errorMessage.innerHTML = text;
+        return false;
+    }
+    if(message.length <= 100) {
+        text = "Please enter more than 100 characters";
+        errorMessage.innerHTML = text;
+        return false;
+    }
 
-    return sendMail(this);
+    return sendMail(contactForm);
+}
+
 
     function sendMail(contactForm) {
         emailjs.send("service_a66lyia", "quiz", {
@@ -31,6 +51,6 @@ function sendForm(event) {
             );
     }
 
-}
+
 
 
