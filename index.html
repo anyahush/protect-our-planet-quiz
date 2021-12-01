@@ -110,7 +110,7 @@
                                 We are happy to help!
                             </p>
 
-                            <form id="contact-form" onsubmit="return sendMail(this);">
+                            <form id="contact-form">
                                 <div>
                                     <input type="text" class="form-input" id="name" placeholder="Name" name="name" required>
                                 </div>
@@ -120,7 +120,7 @@
                                 <div>
                                     <textarea name="message" class="form-input" rows="10" id="message" placeholder="Message" required></textarea>
                                 </div>
-                                <button onclick="closeModal()" class="quiz-btn" type="submit">Send</button>
+                                <button id= "send-btn" class="quiz-btn" type="submit">Send</button>
                             </form>
                         </div>
                     </div>
