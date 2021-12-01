@@ -162,7 +162,30 @@ To test the performance of the site, Google Chrome Developer Tools were used. Pe
 3. Moving questions arrays to JSON file. 
     - Initially using the fetch method, the questions were not displaying correctly. It was learnt that the different levels of questions needed to be able to be used seperately and not as a single array. With exploration and support, the async await function was applied. This has ensured the questions are displayed correctly and the relevant data accessed.
 
+4. Clearing form data after submission
+    - Initially after a user submitted the form, if the page was not refreshed, the contact form would remain populated with the previous inputs. With the addition of form.reset() to the function which opens the form modal, the form now clears the data ready for a new user or new enquiry.
+
+5. Responsiveness for iPad and tablets
+    - When developing there was an issue with where the main quiz container was positioned on iPad and tablet screens. With media queries, this has been resolved and now works well on iPad and tablet screens. 
+
+![An image of home screen on iPad](assets/readme-images/testing-images/testing-ipad.png)
+
 ### Existing
 
 1. Limitations with Graphics
     - The graphics were designed using Pixton, a platform that has populated styles and options. This site did not offer the option to reduce the sizes of the avatars, and as a result means that they are not displayed on smaller screens. 
+
+2. Responsiveness for iPad Pro
+    - The site has been developed to allow use across all screen sizes. Media queries have been used to ensure a good user experience. For iPad Pros the main container sits higher when held vertically. This will be explored and further developed to ensure a good user experience. 
+    - The site works well on an iPad pro when helf horizontally. 
+
+![An image of home screen on iPad diplayed verticall](assets/readme-images/testing-images/testing-ipadpro-vertical.png). 
+
+*This image shows the home page on an iPad Pro displayed vertically.*
+
+![An image of home screen on iPad diplayed horizontally](assets/readme-images/testing-images/testing-ipadpro-horizontal.png). 
+
+*This image shows the home page on an iPad Pro displayed horizontally.*
+
+3. Sound and Home Buttons
+    - When users are playing the quiz, the sound and home button move. This is due to the next question button being hidden until a user selects an answer then is displayed to allow the user to continue. With further development these buttons will remain fixed and not move.
