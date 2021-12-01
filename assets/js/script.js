@@ -82,7 +82,7 @@ let userCanAnswer = true;
 let isPlaying = true;
 
 (async function() {
-    const res = await fetch("/assets/js/questions.json");
+    const res = await fetch("assets/js/questions.json");
     const questions = await res.json();
     easy = questions.easy;
     medium = questions.medium;
