@@ -3,7 +3,7 @@ const contactForm = document.getElementById("contact-form");
 const myModal2 = document.getElementById("myModal2");
 const sendButton = document.getElementById("send-btn");
 
-contactForm.submit(function(e) {
+contactForm.addEventListener('submit', function(e) {
     e.preventDefault();
     validateForm(this);
 });
