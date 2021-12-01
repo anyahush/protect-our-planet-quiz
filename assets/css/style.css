@@ -31,7 +31,7 @@ h3 {
 
 .quiz-btn {
     text-transform: uppercase;
-    font-size: 150%;
+    font-size: 120%;
     border-radius: 5px;
     margin: 10px;
     background-color: #fefefe;
@@ -47,8 +47,12 @@ h3 {
     background-color: #fefefe;
 }
 
+.home-page-btn:hover {
+    border: #3bb141;
+}
+
 .quiz-btn:hover {
-    background-color: #0cb482ed;
+    border: #3bb141
 }
 
 /* quiz */
@@ -137,6 +141,9 @@ h3 {
         width: 400px;
         height: 650px;
         font-size: 140%;
+    }
+    #quiz-btn {
+        font-size: 150%;
     }
 }
 
