@@ -69,7 +69,7 @@ let userCanAnswer = true;
 let isPlaying = true;
 
 
-fetch("questions.json")
+fetch("/assets/js/questions.json")
     .then(response => response.json())
     .then(data => console.log(data))
     .catch(error => console.log(error));
