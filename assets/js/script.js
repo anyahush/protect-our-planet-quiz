@@ -68,16 +68,14 @@ let level = [easy, medium, hard];
 let userCanAnswer = true;
 let isPlaying = true;
 
-(async function() {
-    const res = await fetch("assets/js/questions.json");
-    const questions = await res.json();
-    easy = questions.easy;
-    medium = questions.medium;
-    hard = questions.hard;
-    console.log(easy);
-    console.log(medium);
-    console.log(hard);
-})();
+
+fetch("questions.json")
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.log(error));
+        // easy = questions.easy;
+        // medium = questions.medium;
+        // hard = questions.hard;);
 
 startButton.addEventListener("click", startGame);
 nextButton.addEventListener("click", () => {
