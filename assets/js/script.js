@@ -10,6 +10,7 @@ for (var i = 0; i < btn.length; i++) {
         e.preventDefault();
         let modal = document.querySelector(e.target.getAttribute("data-target"));
         modal.style.display = "block";
+        contactForm.reset();
     };
 }
 
