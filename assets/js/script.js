@@ -1,6 +1,6 @@
 /*jshint esversion: 6 */
 
-//Modal content from Stack Overflow, full details in README.md
+//Modal content from Stack Overflow. Full details in README.md
 var btn = document.querySelectorAll("button.modal-button");
 var modals = document.querySelectorAll('.modal');
 var spans = document.getElementsByClassName("close");
@@ -31,8 +31,9 @@ window.onclick = function(event) {
 };
 // End of Stack Overflow content
 
-// Quiz amended from Web Dev Simplified, full details in README.md
+// Quiz amended from Web Dev Simplified. Full details in README.md
 
+//Declared constant variables
 const startButton = document.getElementById("start-btn");
 const nextButton = document.getElementById("next-btn");
 const nextLevelButton = document.getElementById("next-level-btn");
@@ -56,6 +57,7 @@ const levelCompleteSound = document.getElementById("level-complete-sound");
 
 const maxQuestions = 10;
 
+//Declared let variables
 let shuffledQuestions;
 let currentQuestion;
 let currentQuestionIndex;
@@ -68,6 +70,9 @@ let level = [easy, medium, hard];
 let userCanAnswer = true;
 let isPlaying = true;
 
+/*Fetch question data from JSON file.
+Once added to questions variable, each level array
+populated with data.*/
 (async function() {
     const res = await fetch("assets/js/questions.json");
     const questions = await res.json();
@@ -76,12 +81,14 @@ let isPlaying = true;
     hard = questions.hard;
 })();
 
+/*Click events to start game, next question,
+to turn sound on and off and to return to home
+page.*/
 startButton.addEventListener("click", startGame);
 nextButton.addEventListener("click", () => {
     currentQuestionIndex++;
     nextQuestion();
 });
-
 soundButton.addEventListener("click", () => {
     isPlaying = !isPlaying;
 });
@@ -120,7 +127,7 @@ function startLevel(level) {
     answerButtons.classList.remove("hide");
     nextLevelButton.classList.add("hide");
 
-    // Changes level heading 
+// Changes level heading 
     if (levelScores[1] > 0) {
         levelHeading.innerText = 3;
     } else if (levelScores[0] > 0) {
@@ -168,7 +175,9 @@ function resetQuestion() {
     }
 }
 
-// Assesses whether selected answer is correct and adds to score
+/* Assesses whether selected answer is correct and 
+adds to score. Answer will be highlighted depending on
+correct or incorrect and relevant sound played.*/
 function selectAnswer(e) {
     const selectedButton = e.target;
     const correct = selectedButton.dataset.correct;
@@ -179,7 +188,6 @@ function selectAnswer(e) {
             if (isPlaying) {
                 correctSound.play();
             }
-
         } else {
             selectedButton.style.backgroundColor = 'red';
             if (isPlaying) {
@@ -195,11 +203,11 @@ function selectAnswer(e) {
         }
     }
 
-    //Ends level once max questions reached
+//Ends level once max questions reached
     function endLevel() {
         answerButtons.classList.add("hide");
         questionContainer.classList.add("hide");
-
+//Ends the game if player has achieved score
         levelScores.push(score);
         if (levelScores[0] >= 7 && levelScores[1] >= 7 && levelScores[2] >= 7) {
             nextLevelButton.classList.remove("hide");
@@ -214,11 +222,12 @@ function selectAnswer(e) {
                     levelCompleteSound.play();
                 }
             });
-          
+//Next level generated if three levels have not been played        
         } else if (score >= 7) {
             nextLevelButton.classList.remove("hide");
             nextLevelButton.addEventListener("click", nextLevel);
         } else {
+//Level ends if score not achieved. Option to try again displayed.
             levelScores = [];
             if (isPlaying) {
                 incorrectSound.play();
@@ -233,7 +242,7 @@ function selectAnswer(e) {
         }
     }
 
-    // Generates next level
+// Generates next level
     function nextLevel() {
         if(isPlaying) {
             levelCompleteSound.play();

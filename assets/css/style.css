@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Mohave:wght@600&display=swap');
 
-/* landing page */
+/* Background image */
 #landing-page-container {
     background: url('../images/landing-page-mobile.png');
     background-repeat: no-repeat;
@@ -10,6 +10,7 @@
     position: sticky;
 }
 
+/* Headers */
 h1 {
     font-family: 'Luckiest Guy';
     text-align: center;
@@ -29,15 +30,7 @@ h3 {
     text-transform: uppercase;
 }
 
-.quiz-btn {
-    text-transform: uppercase;
-    font-size: 120%;
-    border-radius: 5px;
-    margin: 10px;
-    background-color: #fefefe;
-
-}
-
+/* Home page buttons */
 .home-page-btn {
     text-transform: uppercase;
     font-size: 150%;
@@ -51,11 +44,8 @@ h3 {
     border: #3bb141;
 }
 
-.quiz-btn:hover {
-    border: #3bb141
-}
 
-/* quiz */
+/* Quiz display */
 #main-container {
     position: relative;
     font-family: 'Mohave';
@@ -75,6 +65,18 @@ h3 {
     display: flex;
     flex-direction: column;
     padding: 10px 0;
+}
+
+.quiz-btn {
+    text-transform: uppercase;
+    font-size: 120%;
+    border-radius: 5px;
+    margin: 10px;
+    background-color: #fefefe;
+
+}
+.quiz-btn:hover {
+    border: #3bb141
 }
 
 .btn {
@@ -102,89 +104,13 @@ h3 {
     margin: 10px;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 768px) {
-    h1 {
-        font-size: 400%;
-    }
-    h2 {
-        font-size: 220%;
-    }
-    #main-container {
-        margin: 90px auto;
-        height: 650px;
-        width: 400px;
-        font-size: 130%;
-    }
-    #answer-btns button {
-        margin: 10px;
-    }
-
-}
-
-
-@media only screen and (min-width: 769px) {
-    #landing-page-container {
-        background: url('../images/landing-page-tablet.png');
-        background-repeat: no-repeat;
-        background-position: center;
-        min-height: 100vh;
-        background-size: cover;
-        position: sticky;
-    }
-    h1 {
-        font-size: 500%;
-    }
-}
-
-@media only screen and (min-width: 1366px) {
-    #main-container {
-        width: 400px;
-        height: 650px;
-        font-size: 140%;
-    }
-    #quiz-btn {
-        font-size: 150%;
-    }
-}
-
-@media only screen and (min-width: 2560px) {
-    h1 {
-        font-size: 700%;
-    }
-    
-    h2 {
-        font-size: 300%;
-        margin: 40px;
-    }
-
-    #main-container {
-        width: 800px;
-        height: 1100px;
-        font-size: 225%;
-        margin: 100px auto;
-    }
-
-    .quiz-btn {
-        font-size: 200%;
-        width: 50%;
-    }
-
-    #counter-container, h3 {
-        font-size: 125%;
-    }
-
-    #answer-btns button {
-        padding: 20px;
-        margin: 20px;
-    }
-}
 
 /* javascript */
 .hide {
     display: none;
 }
 
-/*modal content modified from stack overflow*/
+/*Modal content modified from Stack Overflow*/
 .modal {
     display: none; 
     position: fixed; 
@@ -250,9 +176,9 @@ p {
     cursor: pointer;
 }
 
-/*end of modal content modified from stack overflow*/
+/*End of modal content modified from Stack Overflow*/
 
-/* contact form */
+/* Contact form */
 .form-input {
     width: 100%;
     padding: 5px;
@@ -278,13 +204,8 @@ textarea:focus {
     outline-color: #0cb482;
 }
 
-@media only screen and (min-width: 769px) {
-    .form-input {
-        width: 50%;
-    }
-}
 
-/*footer*/
+/*Footer*/
 footer {
     display: flex;
     color: #000;
@@ -298,4 +219,84 @@ footer {
 #footer {
     padding: 0;
     margin: auto;
+}
+
+/*Media queries*/
+@media only screen and (min-width: 768px) and (max-width: 768px) {
+    h1 {
+        font-size: 400%;
+    }
+    h2 {
+        font-size: 220%;
+    }
+    #main-container {
+        margin: 90px auto;
+        height: 650px;
+        width: 400px;
+        font-size: 130%;
+    }
+    #answer-btns button {
+        margin: 10px;
+    }
+
+}
+
+@media only screen and (min-width: 769px) {
+    #landing-page-container {
+        background: url('../images/landing-page-tablet.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        min-height: 100vh;
+        background-size: cover;
+        position: sticky;
+    }
+    h1 {
+        font-size: 500%;
+    }
+    .form-input {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 1366px) {
+    #main-container {
+        width: 400px;
+        height: 650px;
+        font-size: 140%;
+    }
+    #quiz-btn {
+        font-size: 150%;
+    }
+}
+
+@media only screen and (min-width: 2560px) {
+    h1 {
+        font-size: 700%;
+    }
+    
+    h2 {
+        font-size: 300%;
+        margin: 40px;
+    }
+
+    #main-container {
+        width: 800px;
+        height: 1100px;
+        font-size: 225%;
+        margin: 100px auto;
+    }
+
+    .quiz-btn {
+        font-size: 200%;
+        width: 50%;
+    }
+
+    #counter-container, h3 {
+        font-size: 125%;
+    }
+
+    #answer-btns button {
+        padding: 20px;
+        margin: 20px;
+    }
 }

@@ -7,10 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Protect Our Planet is an educational, interactive quiz aimed at 8-12 year old children about climate change and environmental issues.">
     <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <!--Bootstrap CDN-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <!--Font Awesome CDN-->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+     <!--Custom CSS-->
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
     <title>Protect Our Planet</title>
+     <!--Email JS scripts-->
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js">
     </script>
     <script>
@@ -35,6 +39,7 @@
                     to learn about the
                     environment and how you can help. Good luck!</p>
             </div>
+             <!--Quiz display-->
             <div id="quiz-container" class="hide">
                 <div>
                     <h2>Level <span id="level-heading"></span></h2>
@@ -72,6 +77,7 @@
             </div>
 
             <!--Modal content modified from Stack Overflow-->
+             <!--How to Play modal-->
             <div>
                 <button id="play-btn" class="home-page-btn modal-button" data-toggle="modal" data-target="#myModal1">How to Play</button>
                 <div id="myModal1" class="modal">
@@ -94,6 +100,7 @@
                 </div>
             </div>
 
+             <!--Contact form modal-->
             <div>
                 <button id="contact-btn" class="home-page-btn modal-button" data-toggle="modal" data-target="#myModal2">Contact</button>
                 <div id="myModal2" class="modal">

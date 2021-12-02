@@ -1,11 +1,15 @@
+// Declared constant variables
 const contactForm = document.getElementById("contact-form");
 const myModal2 = document.getElementById("myModal2");
 
+//Submit event listener for contact form
 contactForm.addEventListener('submit', sendForm)
 
+//Function that sends form and closes modal once sent
 function sendForm(event) {
     event.preventDefault();
 
+//SendMail function used from Code Institute Solutions. Full details in README
     return sendMail(contactForm);
 
     function sendMail(contactForm) {
@@ -23,6 +27,7 @@ function sendForm(event) {
                 }
             );
 
+//Modal display modified from W3 Schools. Full details in README
         if (myModal2.style.display === "none") {
             myModal2.style.display = "block";
         } else {
