@@ -18,7 +18,7 @@
  ![JSHint validation result](assets/readme-images/testing-images/jshint-result-script.js.png)
  
  *Results for script.js*
- 
+
  ![JSHint validation result for sendemail.js](assets/readme-images/testing-images/jshint-result-contact.js.png)
 
 *Results for contact.js*
@@ -153,7 +153,8 @@ To test the performance of the site, Google Chrome Developer Tools were used. Pe
 ## Bugs
 
 ### Resolved
-1. Initial HTML validation through W3C HTML Validation highlighted several bugs. There are as shown below.
+1. HTML errors
+    - Initial HTML validation through W3C HTML Validation highlighted several bugs. There are as shown below.
     - The type attribute was removed from the JavaScript resources.
     - The href attribute was removed from the modal buttons. Data-target and data-toggle were applied instead. 
 
@@ -174,6 +175,10 @@ To test the performance of the site, Google Chrome Developer Tools were used. Pe
     - When developing there was an issue with where the main quiz container was positioned on iPad and tablet screens. With media queries, this has been resolved and now works well on iPad and tablet screens. 
 
 ![An image of home screen on iPad](assets/readme-images/testing-images/testing-ipad.png)
+
+6. JavaScript errors
+    - During testing and validation several errors were displayed. This included missing semi-colons, unused variables and including /*jshint esversion: 6 */ in the JavaScript files.
+    - These have been fixed. 
 
 ### Existing
 
