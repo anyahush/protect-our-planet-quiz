@@ -23,11 +23,14 @@ function sendForm(event) {
                     console.log("ERROR", error);
                 }
             );
-        if (response) {
-            myModal2.style.display = "none";
+
+        if (myModal2.style.display === "none") {
+            myModal2.style.display = "block";
         } else {
-            alert("Your email did not send");
+            myModal2.style.display = "none";
+            alert("Thank you for your enquiry. We will respond as soon as possible.");
         }
+
     }
 
 }
