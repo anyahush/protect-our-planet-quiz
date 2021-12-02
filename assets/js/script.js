@@ -74,20 +74,7 @@ let isPlaying = true;
     easy = questions.easy;
     medium = questions.medium;
     hard = questions.hard;
-    console.log(easy);
-    console.log(medium);
-    console.log(hard);
 })();
-
-// getData().then(questions => {
-//     easy = questions.easy;
-//     medium = questions.medium;
-//     hard = questions.hard;
-//     console.log(easy);
-//     console.log(hard);
-//     console.log(medium);
-// })
-
 
 startButton.addEventListener("click", startGame);
 nextButton.addEventListener("click", () => {
@@ -97,7 +84,6 @@ nextButton.addEventListener("click", () => {
 
 soundButton.addEventListener("click", () => {
     isPlaying = !isPlaying;
-    console.log(isPlaying);
 });
 
 homeButton.addEventListener("click", function() {
@@ -186,9 +172,6 @@ function resetQuestion() {
 function selectAnswer(e) {
     const selectedButton = e.target;
     const correct = selectedButton.dataset.correct;
-    console.log(correct);
-    console.log(selectedButton.dataset);
-    console.log(userCanAnswer);
     if (userCanAnswer) {
         if (correct) {
             score++;

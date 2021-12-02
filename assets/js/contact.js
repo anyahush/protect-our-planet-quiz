@@ -1,6 +1,5 @@
 const contactForm = document.getElementById("contact-form");
 const myModal2 = document.getElementById("myModal2");
-const sendButton = document.getElementById("send-btn");
 
 contactForm.addEventListener('submit', sendForm)
 
