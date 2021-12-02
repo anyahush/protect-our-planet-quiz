@@ -5,14 +5,16 @@ const sendButton = document.getElementById("send-btn");
 
 contactForm.addEventListener('submit', function(e) {
     e.preventDefault();
-    validateForm(this);
+    validateForm();
 });
 
 function validateForm(contactForm) {
     let name = document.getElementById("name").value;
-    let emailAddress = document.getElementById("email-address").value;
+    let emailAddress = document.getElementById("emailaddress").value;
     let message = document.getElementById("message").value;
     let errorMessage = document.getElementsByClassName("error-message");
+
+    errorMessage.style.padding = "10px";
 
     var text;
     if(name.length < 5){
