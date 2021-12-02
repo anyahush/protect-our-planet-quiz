@@ -68,15 +68,25 @@ let level = [easy, medium, hard];
 let userCanAnswer = true;
 let isPlaying = true;
 
-async function getData() {
-    const response = await 
-    fetch("assets/js/questions.json")
-    console.log(response);
-    const questions = await response.json();
+(async function() {
+    const res = await fetch("assets/js/questions.json");
+    const questions = await res.json();
     easy = questions.easy;
     medium = questions.medium;
     hard = questions.hard;
-    }
+    console.log(easy);
+    console.log(medium);
+    console.log(hard);
+})();
+
+// getData().then(questions => {
+//     easy = questions.easy;
+//     medium = questions.medium;
+//     hard = questions.hard;
+//     console.log(easy);
+//     console.log(hard);
+//     console.log(medium);
+// })
 
 
 startButton.addEventListener("click", startGame);
@@ -107,7 +117,6 @@ homeButton.addEventListener("click", function() {
 
 // Starts game
 function startGame() {
-    getData();
     startButton.classList.add("hide");
     playButton.classList.add("hide");
     contactButton.classList.add("hide");
