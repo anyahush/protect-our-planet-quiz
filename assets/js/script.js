@@ -2,7 +2,7 @@
 
 //Modal content from Stack Overflow. Full details in README.md
 var btn = document.querySelectorAll("button.modal-button");
-var modals = document.querySelectorAll('.modal');
+var modals = document.querySelectorAll(".modal");
 var spans = document.getElementsByClassName("close");
 
 for (var i = 0; i < btn.length; i++) {
@@ -17,15 +17,15 @@ for (var i = 0; i < btn.length; i++) {
 for (var i = 0; i < spans.length; i++) {
     spans[i].onclick = function() {
         for (let index in modals) {
-            if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";
+            if (typeof modals[index].style !== "undefined") modals[index].style.display = "none";
         }
     };
 }
 
 window.onclick = function(event) {
-    if (event.target.classList.contains('modal')) {
+    if (event.target.classList.contains("modal")) {
         for (let index in modals) {
-            if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";
+            if (typeof modals[index].style !== "undefined") modals[index].style.display = "none";
         }
     }
 };
@@ -48,7 +48,7 @@ const answerButtons = document.getElementById("answer-btns");
 const levelHeading = document.getElementById("level-heading");
 const scoreText = document.getElementById("score-text");
 const greeting = document.getElementById("greeting");
-const greetingHeading = document.getElementById('greeting-heading');
+const greetingHeading = document.getElementById("greeting-heading");
 const greetingInfo = document.getElementById("greeting-info");
 
 const correctSound = document.getElementById("correct-sound");
@@ -137,7 +137,7 @@ function startLevel(level) {
 
     currentQuestionIndex = 1;
     score = 0;
-    shuffledQuestions = level.sort(() => Math.random() - '.5');
+    shuffledQuestions = level.sort(() => Math.random() - ".5");
 
     nextQuestion();
 }
@@ -183,12 +183,12 @@ function selectAnswer(e) {
     if (userCanAnswer) {
         if (correct) {
             score++;
-            selectedButton.style.backgroundColor = 'green';
+            selectedButton.style.backgroundColor = "green";
             if (isPlaying) {
                 correctSound.play();
             }
         } else {
-            selectedButton.style.backgroundColor = 'red';
+            selectedButton.style.backgroundColor = "red";
             if (isPlaying) {
                 incorrectSound.play();
             }
@@ -213,7 +213,7 @@ function selectAnswer(e) {
             nextLevelButton.innerText = "Level Complete";
             nextLevelButton.addEventListener("click", () => {
                 score = levelScores[2];
-                quizContainer.classList.add('hide');
+                quizContainer.classList.add("hide");
                 greeting.classList.remove("hide");
                 greetingHeading.innerText = "Congratulations!";
                 greetingInfo.innerText = `You have completed PROTECT OUR PLANET! You got ${score}/${maxQuestions}! You have helped Carbon Kid and Eco Girl on their mission but the quest isn't over yet. Remember to give these actions a go!`;
@@ -231,7 +231,7 @@ function selectAnswer(e) {
             if (isPlaying) {
                 incorrectSound.play();
             }
-            quizContainer.classList.add('hide');
+            quizContainer.classList.add("hide");
             greeting.classList.remove("hide");
             greetingHeading.innerText = "Ooops!";
             greetingInfo.innerText = `You got ${score}/${currentQuestionIndex}! Well done but not enough to pass to the next level. Give it a go, and try again!`;

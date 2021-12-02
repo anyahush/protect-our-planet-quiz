@@ -5,7 +5,7 @@ const contactForm = document.getElementById("contact-form");
 const myModal2 = document.getElementById("myModal2");
 
 //Submit event listener for contact form
-contactForm.addEventListener('submit', sendForm);
+contactForm.addEventListener("submit", sendForm);
 
 //Function that sends form and closes modal once sent
 function sendForm(event) {
