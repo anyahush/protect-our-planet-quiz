@@ -1,4 +1,4 @@
-/*jshint esversion: 6 */
+/*jshint esversion: 8 */
 
 //Modal content from Stack Overflow. Full details in README.md
 var btn = document.querySelectorAll("button.modal-button");
@@ -59,7 +59,6 @@ const maxQuestions = 10;
 
 //Declared let variables
 let shuffledQuestions;
-let currentQuestion;
 let currentQuestionIndex;
 let score;
 let levelScores = [];
