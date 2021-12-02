@@ -14,7 +14,7 @@
 h1 {
     font-family: 'Luckiest Guy';
     text-align: center;
-    padding: 25px;
+    padding: 25px 0 0;
     font-size: 300%;
     text-shadow: 2px 2px #fff;
 }
@@ -233,7 +233,7 @@ footer {
         font-size: 220%;
     }
     #main-container {
-        margin: 90px auto;
+        margin: 70px auto;
         height: 650px;
         width: 400px;
         font-size: 130%;
