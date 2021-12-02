@@ -161,6 +161,7 @@ To test the performance of the site, Google Chrome Developer Tools were used. Pe
 
 3. Moving questions arrays to JSON file. 
     - Initially using the fetch method, the questions were not displaying correctly. It was learnt that the different levels of questions needed to be able to be used seperately and not as a single array. With exploration and support, the async await function was applied. This has ensured the questions are displayed correctly and the relevant data accessed.
+    - During exploration of another bug, the async await function was modified several times to confirm this was not part of the error. It was corrected and now ensures questions are displayed correctly.
 
 4. Clearing form data after submission
     - Initially after a user submitted the form, if the page was not refreshed, the contact form would remain populated with the previous inputs. With the addition of form.reset() to the function which opens the form modal, the form now clears the data ready for a new user or new enquiry.
@@ -189,3 +190,12 @@ To test the performance of the site, Google Chrome Developer Tools were used. Pe
 
 3. Sound and Home Buttons
     - When users are playing the quiz, the sound and home button move. This is due to the next question button being hidden until a user selects an answer then is displayed to allow the user to continue. With further development these buttons will remain fixed and not move.
+
+4. Form Validation
+    - Whilst developing a validateForm function was used to validate form inputs. During development a warning appeared that caused the site to repeatedly load and not move on screen. Through research and support, it was discovered that there was no click event for submit, and so it was continually trying to submit. 
+    - This was resolved by adding a click event to the contact form. 
+    - Following this the validateForm function then impacted the sendMail function and prevented emails being submitted to the site owner. Due to time constraints, this has been removed to ensure that the contact form can be used by a site user. This will be explored and developed further in the future to ensure correct contact form validation. The required attribute has been added to the HTML form inputs.
+
+![Warning message displayed](assets/readme-images/testing-images/warning-message.png)
+
+*This was the warning message that appeared*. 
