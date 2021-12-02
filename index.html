@@ -123,18 +123,15 @@
 
                             <form id="contact-form">
                                 <div>
-                                    <input type="text" class="form-input" id="name" placeholder="Name" name="name">
-                                    <div class="error-message"></div>
+                                    <input type="text" class="form-input" id="name" placeholder="Name" name="name" required>
                                 </div>
                                 <div>
                                     <input type="email" class="form-input" id="emailaddress" placeholder="Email"
-                                        name="emailaddress">
-                                    <div class="error-message"></div>
+                                        name="emailaddress" required>
                                 </div>
                                 <div>
                                     <textarea name="message" class="form-input" rows="10" id="message"
-                                        placeholder="Message"></textarea>
-                                    <div class="error-message"></div>
+                                        placeholder="Message" required></textarea>
                                 </div>
                                 <button id="send-btn" class="quiz-btn" type="submit">Send</button>
                             </form>
