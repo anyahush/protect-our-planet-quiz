@@ -14,22 +14,20 @@ function validateForm(contactForm) {
     let message = document.getElementById("message").value;
     let errorMessage = document.getElementsByClassName("error-message");
 
-    errorMessage.style.padding = "10px";
-
-    var text;
+  
     if(name.length < 5){
-        text = "Please enter valid name";
-        errorMessage.innerHTML = text;
+        errorMessage.innerHTML = "Please enter valid name";
+        console.log(errorMessage);
         return false;
     }
-    if(emailAddress.indexOf("@") == -1 || email.length < 6) {
-        text = "Please enter valid email address";
-        errorMessage.innerHTML = text;
+    if(emailAddress.indexOf("@") == -1) {
+        errorMessage.innerHTML =  "Please enter valid email address";
+        console.log(errorMessage);
         return false;
     }
     if(message.length <= 100) {
-        text = "Please enter more than 100 characters";
-        errorMessage.innerHTML = text;
+        errorMessage.innerHTML = "Please enter more than 100 characters";
+        console.log(errorMessage);
         return false;
     }
 
@@ -51,6 +49,8 @@ function validateForm(contactForm) {
                     console.log("ERROR", error);
                 }
             );
+        myModal2.display.none;
+        return false;
     }
 
 
