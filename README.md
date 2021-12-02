@@ -4,7 +4,7 @@
 
 Protect Our Planet is an interactive quiz aimed at 8-12 year old children, with the aim of engaging positively about environmental topics in a fun way. Climate change is increasingly becoming a top priority on the social and political agenda, and it is important that our children understand how to look after the planet. This quiz aims to introduce topics such as recycling, renewable energy, water efficiency and sustainable transport in an easily digestable and fun way, with the hope of inspiring and empowering young people to take action.  
 
-This project has been developed as the User Centric Frontend Development Milestone 2 Project as part of Code Institute's Software Development Diploma.  
+This project has been developed as the Interactive Front-End Development Milestone 2 Project as part of Code Institute's Software Development Diploma.  
 
 Deployed website can be viewed [here](https://anyahush.github.io/protect-our-planet-quiz/).
 
@@ -130,10 +130,10 @@ During the strategy stage features were mapped according to their importance and
 - Completion certificate
     * Once a player completes all three levels, players will be able to download a certificate highlighting what they achieved in the quiz. In addition it will include a summary of what they learned throughout the quiz. 
 - Try again options
-    * The 'Try again' option will be further developed to allow players to replay the existing level they are on, rather than go back to Level 1 every time. 
+    * The 'Try Again' option will be further developed to allow players to replay the existing level they are on, rather than go back to Level 1 every time. 
 - Superhero graphics
     * The superhero graphics of Carbon Kid and Eco Girl will be further developed to include images of them throughout the quiz on smaller devices.
-- Display Changing Sound Button
+- A display changing sound button
     * A sound button that changes display according to whether the sound has been clicked on or off will be developed. Currently the sound button does not indicate to the user if the sound is on or off. 
 
 ## Structure Plane 
@@ -155,7 +155,7 @@ The wireframes for this project were developed using [Balsamiq](https://balsamiq
 ### Changes to Wireframes
 
 1. Navbar
-    - The navabar was removed during the initial development stage and a home button used instead. 
+    - The navbar was removed during the initial development stage and a home button used instead. 
 2. Social Media Links
     - In the initial wireframes social media links were included. During development it was decided that social media links are not appropriate at this stage as the primary age demographic being targeted is 8-12 year old children. 
 3. Logo/ Favicon
