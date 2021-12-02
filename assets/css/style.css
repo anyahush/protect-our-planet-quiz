@@ -7,7 +7,7 @@
     background-position: center;
     background-size: cover;
     min-height: 100vh;
-    position: sticky;
+    position: relative;
 }
 
 /* Headers */
@@ -209,18 +209,19 @@ textarea:focus {
 
 /*Footer*/
 footer {
-    display: flex;
+    position: absolute;
+    bottom: 0;
     color: #000;
     font-size: 80%;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    justify-content: center;  
+    height: 1.5rem;
+    width: 100%;
+    background-color: #b7e6d3;
+    opacity: 0.8;
 }
 
 #footer {
     padding: 0;
-    margin: auto;
+    text-align: center;
 }
 
 /*Media queries*/
