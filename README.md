@@ -117,6 +117,10 @@ During the strategy stage features were mapped according to their importance and
     * The try again button will take the player back to Level 1.
 - Sound effects
     * Sound effects have been included when a player gets a correct answer, an incorrect answer, when a player completes a level and when a player completes the game. Sound effects add drama and fun to the game. 
+- Sound button
+    * The sound button allows players to turn the sound effects on or off at any point during the game. This ensures that each player can enjoy the game as they wish, with or without sound.
+- Home button
+    * The home button allows players to exit the game at any point and return to the home page. This contributes to a good user experience, as the player can decide if they wish to exit at any point.
 - How to play modal
     * The 'How to Play' modal explains to players what the aim of the game is and how to play. This is important in ensuring all players understand what is expected of them in the game.
 - Contact form modal
