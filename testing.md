@@ -15,9 +15,13 @@
 
  * The [JSHint](https://jshint.com/) tool was used to check for errors in all JavaScript files. Initially there were errors regarding missing semi-colons and some variables not defined in the correct scope. With these corrected and specifying ECMAScript 6, these errors have been primarily fixed. 
 
- ![JSHint validation result](assets/readme-images/testing-images/jshint-result.png)
----
- ![JSHint validation result for sendemail.js](assets/readme-images/testing-images/jshint-result-sendemailjs.png)
+ ![JSHint validation result](assets/readme-images/testing-images/jshint-result-script.js.png)
+ 
+ *Results for script.js*
+ 
+ ![JSHint validation result for sendemail.js](assets/readme-images/testing-images/jshint-result-contact.js.png)
+
+*Results for contact.js*
 
 ## User Stories
 
